@@ -1,3 +1,5 @@
+import page from './page.module.css'
+
 const Page = () => {
   return (
     <section className='flex flex-col justify-center items-center bg-primary_bg_color px-4 pt-16 pb-32 mt-[64px] text-center text-slate-300 relative'>
@@ -19,7 +21,9 @@ const Page = () => {
           />
         </div>
         <div className='h-80 bg-secondary_bg_color'></div>
-        <div className='col-span-3'></div>
+        <div
+          className={`${page.style_content} col-span-3 flex flex-col gap-2 text-left`}
+        ></div>
         <div className='h-80 bg-secondary_bg_color'></div>
       </main>
     </section>
