@@ -1,3 +1,4 @@
+import PDFViewer from '@/components/PDFViewer'
 import Table from '@/components/Table'
 
 const Page = () => {
@@ -8,7 +9,7 @@ const Page = () => {
   ]
 
   return (
-    <section className='flex flex-col justify-center items-center bg-primary_bg_color px-4 pt-4 pb-16 mt-[64px] text-center text-slate-300'>
+    <section className='flex flex-col justify-center items-center bg-primary_bg_color px-4 pt-4 pb-16 mt-[64px] text-center text-slate-300 relative'>
       <main className='max-w-7xl w-full mt-6'>
         <h1 className='text-slate-200 text-3xl font-bold text-left border-b border-b-slate-800 pb-2'>
           Mathematics
@@ -26,6 +27,8 @@ const Page = () => {
           <Table data={data} />
         </div>
       </main>
+
+      <PDFViewer />
     </section>
   )
 }
