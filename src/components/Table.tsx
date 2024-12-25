@@ -1,6 +1,10 @@
-import Link from 'next/link'
+type Props = {
+  data: string[][]
+  setPdfUrlFunc: (value: string) => void
+  setModalOpenFunc: (value: boolean) => void
+}
 
-const Table = ({ data }: { data: string[][] }) => {
+const Table = ({ data, setPdfUrlFunc, setModalOpenFunc }: Props) => {
   return (
     <div className='relative overflow-x-auto shadow-md rounded mt-2'>
       <table className='w-full text-sm text-left rtl:text-right text-gray-400'>
@@ -24,7 +28,15 @@ const Table = ({ data }: { data: string[][] }) => {
                 scope='row'
                 className='px-6 py-4 font-medium whitespace-nowrap text-blue-500'
               >
-                <Link href={''}>{val[0]}</Link>
+                {/* <Link href={''}>{val[0]}</Link> */}
+                <button
+                  onClick={() => {
+                    setModalOpenFunc(true)
+                    setPdfUrlFunc('/sample-pdf.pdf')
+                  }}
+                >
+                  {val[0]}
+                </button>
               </th>
               <td className='px-6 py-4'>{val[2]}</td>
               <td className='px-6 py-4'>{val[1]}</td>

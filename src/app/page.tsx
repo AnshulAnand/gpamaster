@@ -5,21 +5,45 @@ export default function Home() {
     <>
       {/*Hero */}
       <section className='flex flex-col justify-center items-center bg-primary_bg_color px-4 py-32 mt-[64px] text-center'>
+        <span className='bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 mb-3 rounded-full px-4 py-1 shadow-[0px_50px_1000px_200px_rgba(59,_130,_246,_0.15)]'>
+          <p className='text-black text-sm font-medium'>
+            Completely redesigned
+          </p>
+        </span>
         <h1 className='bg-gradient-to-r from-slate-200 via-slate-300 to-slate-500 inline-block text-transparent bg-clip-text text-6xl font-extrabold text-center'>
-          All In One Solution For Students
+          All In One{' '}
+          <span className='bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 inline-block text-transparent bg-clip-text font-extrabold'>
+            Solution
+          </span>{' '}
+          For Students
         </h1>
         <p className='text-slate-300 inline-block bg-clip-text text-xl mt-4'>
           GPA Master provides Study Materials, Community and Other <br />{' '}
           Usefull resources & information to college students.
         </p>
-        <span className='bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 mt-3 rounded-full px-4 py-1 shadow-[0px_50px_1000px_200px_rgba(59,_130,_246,_0.15)]'>
-          <p className='text-black text-sm font-medium'>
-            Completely redesigned
-          </p>
-        </span>
+        <div className='flex flex-wrap justify-center items-center mt-4'>
+          <Link
+            href={''}
+            className='text-white bg-[#FF9119] focus:ring-4 focus:outline-none font-medium text-sm px-5 py-2.5 text-center inline-flex items-center hover:bg-[#FF9119]/80 focus:ring-[#FF9119]/40 me-2 rounded-xl hover:-translate-y-1 transition'
+          >
+            Checkout resources
+          </Link>
+          <Link
+            href={''}
+            className='text-white bg-[#050708] focus:ring-4 focus:outline-none font-medium text-sm px-5 py-3 text-center inline-flex items-center hover:bg-[#050708]/40 focus:ring-gray-600 me-2 rounded-xl hover:-translate-y-1 transition'
+          >
+            Discussion
+          </Link>
+          <Link
+            href={''}
+            className='text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none font-medium text-sm px-5 py-2.5 text-center inline-flex items-center focus:ring-gray-500 me-2 rounded-xl hover:-translate-y-1 transition'
+          >
+            GPA Master Blogs
+          </Link>
+        </div>
 
         {/* Blog showcase */}
-        <div className='max-w-screen-xl w-screen mt-44'>
+        <div className='max-w-screen-xl w-screen mt-40'>
           <div className='flex w-full mb-4'>
             <div className='flex items-center justify-center'>
               <div className='w-full rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1'>
@@ -197,6 +221,105 @@ export default function Home() {
             </Link>
           </div>
         </div>
+      </section>
+
+      {/* Testimonial */}
+      <section className='flex justify-center items-center bg-primary_bg_color px-4 py-32 text-center'>
+        <main className='max-w-[1280px] w-full flex flex-col items-start'>
+          <h1 className='bg-gradient-to-r from-slate-200 via-slate-300 to-slate-500 inline-block text-transparent bg-clip-text text-4xl font-extrabold'>
+            Testimonial
+          </h1>
+          <p className='text-slate-400 mt-3 text-left'>
+            Do&apos;nt just take our word for it - see what <br />
+            actual users of our service have to say about their experience.
+          </p>
+
+          <div className='grid grid-cols-4 gap-4 w-full mt-8'>
+            <div className='flex flex-col justify-center items-center bg-secondary_bg_color p-4 rounded-xl hover:-translate-y-2 transition'>
+              <p className='text-slate-300 mb-4'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Provident nobis, numquam et quae officiis eaque, ipsa natus sunt
+                obcaecati atque, amet magni iste. Cum esse eos quos, quae veniam
+                quam consequatur incidunt dicta dolorem sit soluta praesentium,
+                totam distinctio voluptatem fugit natus fugiat id reiciendis
+                sint eum. Quas, ratione quae.
+              </p>
+              <div className='relative h-16 w-16 rounded-full mb-2'>
+                <img
+                  src={`https://images.pexels.com/photos/5428264/pexels-photo-5428264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                  alt=''
+                  className='absolute w-full h-full object-cover rounded-full'
+                />
+              </div>
+              <h3 className='font-extrabold text-slate-300'>Anshul Anand</h3>
+              <p className='text-slate-400'>2nd year</p>
+            </div>
+            <div className='flex flex-col justify-center items-center bg-secondary_bg_color p-4 rounded-xl hover:-translate-y-2 transition'>
+              <p className='text-slate-300 mb-4'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Provident nobis, numquam et quae officiis eaque, ipsa natus sunt
+                obcaecati atque, amet magni iste. Cum esse eos quos, quae veniam
+                quam consequatur incidunt dicta dolorem sit soluta praesentium,
+                totam distinctio voluptatem fugit natus fugiat id reiciendis
+                sint eum. Quas, ratione quae.
+              </p>
+              <div className='relative h-16 w-16 rounded-full mb-2'>
+                <img
+                  src={`https://images.pexels.com/photos/5428264/pexels-photo-5428264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                  alt=''
+                  className='absolute w-full h-full object-cover rounded-full'
+                />
+              </div>
+              <h3 className='font-extrabold text-slate-300'>Anshul Anand</h3>
+              <p className='text-slate-400'>2nd year</p>
+            </div>
+            <div className='flex flex-col justify-center items-center bg-secondary_bg_color p-4 rounded-xl hover:-translate-y-2 transition'>
+              <p className='text-slate-300 mb-4'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Provident nobis, numquam et quae officiis eaque, ipsa natus sunt
+                obcaecati atque, amet magni iste. Cum esse eos quos, quae veniam
+                quam consequatur incidunt dicta dolorem sit soluta praesentium,
+                totam distinctio voluptatem fugit natus fugiat id reiciendis
+                sint eum. Quas, ratione quae.
+              </p>
+              <div className='relative h-16 w-16 rounded-full mb-2'>
+                <img
+                  src={`https://images.pexels.com/photos/5428264/pexels-photo-5428264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                  alt=''
+                  className='absolute w-full h-full object-cover rounded-full'
+                />
+              </div>
+              <h3 className='font-extrabold text-slate-300'>Anshul Anand</h3>
+              <p className='text-slate-400'>2nd year</p>
+            </div>
+            <div className='flex flex-col justify-center items-center bg-secondary_bg_color p-4 rounded-xl hover:-translate-y-2 transition'>
+              <p className='text-slate-300 mb-4'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Provident nobis, numquam et quae officiis eaque, ipsa natus sunt
+                obcaecati atque, amet magni iste. Cum esse eos quos, quae veniam
+                quam consequatur incidunt dicta dolorem sit soluta praesentium,
+                totam distinctio voluptatem fugit natus fugiat id reiciendis
+                sint eum. Quas, ratione quae.
+              </p>
+              <div className='relative h-16 w-16 rounded-full mb-2'>
+                <img
+                  src={`https://images.pexels.com/photos/5428264/pexels-photo-5428264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                  alt=''
+                  className='absolute w-full h-full object-cover rounded-full'
+                />
+              </div>
+              <h3 className='font-extrabold text-slate-300'>Anshul Anand</h3>
+              <p className='text-slate-400'>2nd year</p>
+            </div>
+          </div>
+        </main>
+      </section>
+
+      {/* GPA Master */}
+      <section className='flex justify-center items-center bg-primary_bg_color px-4 py-32 text-center pb-64'>
+        <h1 className='bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 inline-block text-transparent bg-clip-text text-9xl font-extrabold'>
+          For students, by the students.
+        </h1>
       </section>
     </>
   )

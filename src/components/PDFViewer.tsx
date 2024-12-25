@@ -1,5 +1,3 @@
-'use client'
-
 import { useState } from 'react'
 import { pdfjs, Document, Page } from 'react-pdf'
 import { RxCross2 } from 'react-icons/rx'
@@ -9,11 +7,15 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   import.meta.url
 ).toString()
 
-const PDFViewer = () => {
+type Props = {
+  pdfUrl: string
+  setModalOpenFunc: (value: boolean) => void
+}
+
+const PDFViewer = ({ pdfUrl, setModalOpenFunc }: Props) => {
+  // const [pageNumber, setPageNumber] = useState<number>(1)
   const [numPages, setNumPages] = useState<number>()
-  const [pageNumber, setPageNumber] = useState<number>(1)
   const [scale, setScale] = useState('2')
-  const [modalOpen, setModalOpen] = useState(true)
 
   const onDocumentLoadSuccess = ({ numPages }: { numPages: number }) => {
     setNumPages(numPages)
@@ -28,7 +30,8 @@ const PDFViewer = () => {
         <main className='m-4 p-4 max-w-[1400px] h-[1000px] w-full bg-secondary_bg_color z-50'>
           <div className='flex flex-wrap justify-between items-center mb-3'>
             <p className='text-slate-400 text-sm'>
-              Page {pageNumber} of {numPages}
+              {/* Page {pageNumber} of {numPages} */}
+              {numPages} pages
             </p>
             <span className='flex justify-center items-center gap-2'>
               <label
@@ -48,7 +51,7 @@ const PDFViewer = () => {
               />
             </span>
             <button
-              onClick={() => setModalOpen(false)}
+              onClick={() => setModalOpenFunc(false)}
               className='flex justify-center items-center bg-black opacity-50 p-2 rounded-full hover:opacity-60 hover:font-bold
               '
             >
@@ -58,16 +61,17 @@ const PDFViewer = () => {
 
           <div className='overflow-auto h-full w-full'>
             <Document
-              file='/sample-pdf.pdf'
+              file={pdfUrl}
               onLoadSuccess={onDocumentLoadSuccess}
               className={`flex flex-col justify-center items-center gap-1`}
             >
+              {/* eslint-disable-next-line prefer-spread */}
               {Array.apply(null, Array(numPages)).map((x, i) => (
                 <Page
                   key={i}
                   renderTextLayer={false}
                   renderAnnotationLayer={false}
-                  pageNumber={pageNumber}
+                  pageNumber={i + 1}
                   scale={parseInt(scale)}
                 />
               ))}

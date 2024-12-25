@@ -1,7 +1,21 @@
+'use client'
+
 import PDFViewer from '@/components/PDFViewer'
 import Table from '@/components/Table'
+import { useState } from 'react'
 
 const Page = () => {
+  const [modalOpen, setModalOpen] = useState(false)
+  const [pdfUrl, setPdfUrl] = useState('')
+
+  const SetModalOpenFunc = (value: boolean) => {
+    setModalOpen(value)
+  }
+
+  const SetPdfUrlFunc = (value: string) => {
+    setPdfUrl(value)
+  }
+
   const data = [
     ['lorem ispum', '19 Dec 2024', 'lorem'],
     ['lorem ispum', '19 Dec 2024', 'lorem'],
@@ -16,19 +30,33 @@ const Page = () => {
         </h1>
         <div className='py-4'>
           <h2 className='text-slate-200 text-xl font-bold text-left'>Notes</h2>
-          <Table data={data} />
+          <Table
+            setPdfUrlFunc={SetPdfUrlFunc}
+            setModalOpenFunc={SetModalOpenFunc}
+            data={data}
+          />
         </div>
         <div className='py-4'>
           <h2 className='text-slate-200 text-xl font-bold text-left'>Notes</h2>
-          <Table data={data} />
+          <Table
+            setPdfUrlFunc={SetPdfUrlFunc}
+            setModalOpenFunc={SetModalOpenFunc}
+            data={data}
+          />
         </div>
         <div className='py-4'>
           <h2 className='text-slate-200 text-xl font-bold text-left'>Notes</h2>
-          <Table data={data} />
+          <Table
+            setPdfUrlFunc={SetPdfUrlFunc}
+            setModalOpenFunc={SetModalOpenFunc}
+            data={data}
+          />
         </div>
       </main>
 
-      <PDFViewer />
+      {modalOpen && (
+        <PDFViewer pdfUrl={pdfUrl} setModalOpenFunc={SetModalOpenFunc} />
+      )}
     </section>
   )
 }
