@@ -1,3 +1,4 @@
+import { getGoogleOAuthURL } from '@/lib/utils'
 import { FcGoogle } from 'react-icons/fc'
 
 const Page = () => {
@@ -24,7 +25,10 @@ const Page = () => {
           <p className='text-4xl text-slate-300'>&#129171;</p>
           <p className='text-2xl text-slate-400'>&#129171;</p>
 
-          <a href='' className='flex items-center justify-center rounded'>
+          <a
+            href={getGoogleOAuthURL()}
+            className='flex items-center justify-center rounded'
+          >
             <div className='w-full rounded bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1'>
               <div className='flex h-full w-full items-center justify-center bg-secondary_bg_color back rounded'>
                 <span className='flex justify-center items-center gap-2 p-2 font-black text-white uppercase w-full rounded'>
