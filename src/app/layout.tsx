@@ -1,7 +1,7 @@
-import type { Metadata } from 'next'
-// import { Geist, Geist_Mono } from 'next/font/google'
-import { Poppins } from 'next/font/google'
 import './globals.css'
+import type { Metadata } from 'next'
+import { Poppins } from 'next/font/google'
+import Providers from '@/components/ProgressBarProvider'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 
@@ -9,16 +9,6 @@ const poppins = Poppins({
   weight: ['300', '400', '600', '700'],
   subsets: ['latin'],
 })
-
-// const geistSans = Geist({
-//   variable: '--font-geist-sans',
-//   subsets: ['latin'],
-// })
-
-// const geistMono = Geist_Mono({
-//   variable: '--font-geist-mono',
-//   subsets: ['latin'],
-// })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -32,13 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' className='dark'>
-      <body
-        className={poppins.className}
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <NavBar />
-        {children}
-        <Footer />
+      <body className={poppins.className}>
+        <Providers>
+          <NavBar />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   )

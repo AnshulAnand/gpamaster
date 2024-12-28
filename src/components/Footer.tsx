@@ -1,8 +1,12 @@
-import Link from 'next/link'
+import { FaInstagram } from 'react-icons/fa6'
+import { FaGithub } from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col justify-center items-center bg-secondary_bg_color px-4 py-32 text-center'>
+    <footer
+      id='footer'
+      className='flex flex-col justify-center items-center bg-secondary_bg_color px-4 py-32 text-center'
+    >
       <div className='flex justify-between items-start gap-8 max-w-7xl w-full'>
         <div className='text-left'>
           <h1 className='text-slate-300 text-2xl font-semibold'>GPA Master</h1>
@@ -11,6 +15,22 @@ const Footer = () => {
             <br />
             resources and community building.
           </p>
+          <div className='flex gap-2 mt-4'>
+            <a
+              href='https://www.instagram.com/gpamaster.in/'
+              className='text-slate-400 text-xl'
+              target='_blank'
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href='https://github.com/gpamaster'
+              className='text-slate-400 text-xl'
+              target='_blank'
+            >
+              <FaGithub />
+            </a>
+          </div>
         </div>
         <div className='flex gap-16'>
           <ul className='flex flex-col text-left text-slate-400'>
@@ -27,11 +47,36 @@ const Footer = () => {
           </ul>
           <ul className='flex flex-col text-left text-slate-400'>
             <li className='text-slate-300 font-bold'>Useful Links</li>
-            <Link href={''}>Privacy Policy</Link>
-            <Link href={''}>Terms & conditions</Link>
-            <Link href={''}>Cancellation and Refund</Link>
-            <Link href={''}>Shipping and Delivery</Link>
-            <Link href={''}>Contact Us</Link>
+            <a
+              target='_blank'
+              href='https://merchant.razorpay.com/policy/Og51W3JFp4hAAO/privacy'
+            >
+              Privacy Policy
+            </a>
+            <a
+              target='_blank'
+              href='https://merchant.razorpay.com/policy/Og51W3JFp4hAAO/terms'
+            >
+              Terms & conditions
+            </a>
+            <a
+              target='_blank'
+              href='https://merchant.razorpay.com/policy/Og51W3JFp4hAAO/refund'
+            >
+              Cancellation and Refund
+            </a>
+            <a
+              target='_blank'
+              href='https://merchant.razorpay.com/policy/Og51W3JFp4hAAO/shipping'
+            >
+              Shipping and Delivery
+            </a>
+            <a
+              target='_blank'
+              href='https://merchant.razorpay.com/policy/Og51W3JFp4hAAO/contact_us'
+            >
+              Contact Us
+            </a>
           </ul>
         </div>
       </div>

@@ -14,3 +14,27 @@ export interface IUser {
   updatedAt: Date
   __v: number
 }
+
+export interface IPost {
+  _id: string
+  user: string
+  title: string
+  tags: string[]
+  body: string
+  image: string
+  views: number
+  comments: number
+  createdAt: Date
+  updatedAt: Date
+  __v: number
+}
+
+export interface IComment {
+  _id: string
+  user: string
+  post: string
+  body: string
+  createdAt: Date
+  updatedAt: Date
+  __v: number
+}
