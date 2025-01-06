@@ -27,3 +27,16 @@ export function useUserById(id: string, type: string) {
     isError: error,
   }
 }
+
+// POST User
+export function useMutateUser() {
+  const { trigger, isMutating, data, error } = useSWRMutation(
+    `/api/user/current`,
+    POST
+  )
+  return {
+    triggerUserMutate: trigger,
+    userError: error,
+    isUserMutating: isMutating,
+  }
+}

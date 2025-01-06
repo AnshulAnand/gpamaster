@@ -1,20 +1,29 @@
 .style_content h1 {
   font-size: 2em;
+  margin-top: 1rem;
 }
 .style_content h2 {
   font-size: 1.5em;
+  margin-top: 1rem;
 }
 .style_content h3 {
   font-size: 1.17em;
+  margin-top: 1rem;
 }
 .style_content h4 {
   font-size: 1em;
+  margin-top: 1rem;
 }
 .style_content h5 {
   font-size: 0.83em;
+  margin-top: 1rem;
 }
 .style_content h6 {
   font-size: 0.75em;
+  margin-top: 1rem;
+}
+.style_content p {
+  margin-bottom: 1rem;
 }
 .style_content a {
   color: #3b82f6;
@@ -31,4 +40,7 @@
 }
 .style_content ol li {
   list-style-type: decimal;
+}
+.style_content img {
+  margin-block: 8px;
 }

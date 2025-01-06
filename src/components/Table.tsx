@@ -1,10 +1,11 @@
 type Props = {
   data: string[][]
+  isPDF: boolean
   setPdfUrlFunc: (value: string) => void
   setModalOpenFunc: (value: boolean) => void
 }
 
-const Table = ({ data, setPdfUrlFunc, setModalOpenFunc }: Props) => {
+const Table = ({ data, isPDF, setPdfUrlFunc, setModalOpenFunc }: Props) => {
   return (
     <div className='relative overflow-x-auto shadow-md rounded mt-2'>
       <table className='w-full text-sm text-left rtl:text-right text-gray-400'>
@@ -29,16 +30,22 @@ const Table = ({ data, setPdfUrlFunc, setModalOpenFunc }: Props) => {
                 className='px-6 py-4 font-medium whitespace-nowrap text-blue-500'
               >
                 {/* <Link href={''}>{val[0]}</Link> */}
-                <button
-                  onClick={() => {
-                    setModalOpenFunc(true)
-                    setPdfUrlFunc('/sample-pdf.pdf')
-                  }}
-                >
-                  {val[0]}
-                </button>
+                {isPDF ? (
+                  <button
+                    onClick={() => {
+                      setModalOpenFunc(true)
+                      setPdfUrlFunc(`/study-material/${val[3]}.pdf`)
+                    }}
+                  >
+                    {isPDF ? val[3] : val[0]}
+                  </button>
+                ) : (
+                  <a target='_blank' href={val[3]}>
+                    {val[0]}
+                  </a>
+                )}
               </th>
-              <td className='px-6 py-4'>{val[2]}</td>
+              <td className='px-6 py-4'>{isPDF ? 'PDF' : 'YT Link'}</td>
               <td className='px-6 py-4'>{val[1]}</td>
             </tr>
           ))}

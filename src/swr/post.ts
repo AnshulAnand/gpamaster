@@ -19,3 +19,16 @@ export function usePosts(page: number, limit: number, user?: string) {
     isError: error,
   }
 }
+
+// POST Article
+export function useMutatePost() {
+  const { trigger, isMutating, data, error } = useSWRMutation(
+    `/api/post/create`,
+    POST
+  )
+  return {
+    triggerPostMutate: trigger,
+    postError: error,
+    isPostMutating: isMutating,
+  }
+}

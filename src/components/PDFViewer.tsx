@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { pdfjs, Document, Page } from 'react-pdf'
+import { redirect } from 'next/navigation'
 import { RxCross2 } from 'react-icons/rx'
+import useCurrentUser from '@/swr/user'
+import dayjs from 'dayjs'
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.mjs',
@@ -14,8 +17,18 @@ type Props = {
 
 const PDFViewer = ({ pdfUrl, setModalOpenFunc }: Props) => {
   // const [pageNumber, setPageNumber] = useState<number>(1)
+  const { currentUser, isError, isLoading } = useCurrentUser()
   const [numPages, setNumPages] = useState<number>()
   const [scale, setScale] = useState('2')
+
+  if (isLoading) return <p>loading...</p>
+  if (!currentUser) redirect('/auth')
+
+  const date1 = dayjs(dayjs().format('YYYY-DD-MM'))
+  const dateDiff = date1.diff(currentUser.lastPaymentDate, 'day')
+
+  if (!currentUser.paymentStatus) redirect('/pricing')
+  if (dateDiff > 120) redirect('/pricing')
 
   const onDocumentLoadSuccess = ({ numPages }: { numPages: number }) => {
     setNumPages(numPages)
@@ -42,7 +55,6 @@ const PDFViewer = ({ pdfUrl, setModalOpenFunc }: Props) => {
               </label>
               <input
                 onChange={e => setScale(e.target.value)}
-                id='minmax-range'
                 type='range'
                 min='1'
                 max='5'
@@ -63,7 +75,8 @@ const PDFViewer = ({ pdfUrl, setModalOpenFunc }: Props) => {
             <Document
               file={pdfUrl}
               onLoadSuccess={onDocumentLoadSuccess}
-              className={`flex flex-col justify-center items-center gap-1`}
+              // className={'rotate-180'}
+              // className={`flex flex-col justify-center items-center gap-1`}
             >
               {/* eslint-disable-next-line prefer-spread */}
               {Array.apply(null, Array(numPages)).map((x, i) => (
@@ -73,6 +86,7 @@ const PDFViewer = ({ pdfUrl, setModalOpenFunc }: Props) => {
                   renderAnnotationLayer={false}
                   pageNumber={i + 1}
                   scale={parseInt(scale)}
+                  className='mb-1'
                 />
               ))}
             </Document>

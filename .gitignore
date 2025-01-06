@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+/public/study-material
 
 # debug
 npm-debug.log*

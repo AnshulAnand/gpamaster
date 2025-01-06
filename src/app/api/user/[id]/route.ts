@@ -19,14 +19,12 @@ export const GET = async (request: NextRequest, { params }: Props) => {
   if (typeOfIdentification === 'id') searchObject._id = id
   else searchObject.username = id
 
-  console.log({ searchObject })
-
   try {
     await connect()
     const user = await User.findOne(searchObject)
     return new NextResponse(JSON.stringify(user), { status: 200 })
   } catch (error: any) {
-    return new NextResponse('Error in fetching users' + error.message, {
+    return new NextResponse('Error in fetching user' + error.message, {
       status: 500,
     })
   }

@@ -7,7 +7,6 @@ import Comment from '@/lib/models/comment.model'
 export const POST = async (request: NextRequest) => {
   const userId = (await headers()).get('userId')
   const body = await request.json()
-  console.log({ userId, body })
 
   if (!body.post || !body.body || !userId)
     return new NextResponse(
@@ -40,7 +39,7 @@ export const POST = async (request: NextRequest) => {
 
     return new NextResponse(JSON.stringify(newComment), { status: 200 })
   } catch (error: any) {
-    return new NextResponse('Error in fetching users' + error.message, {
+    return new NextResponse('Error in creating comment' + error.message, {
       status: 500,
     })
   }

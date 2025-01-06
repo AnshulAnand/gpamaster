@@ -15,3 +15,25 @@ export async function GET(url: string) {
     throw new Error('Failed to fetch data')
   }
 }
+
+// POST fetch api request
+export async function POST(url: string, { arg }: { arg: { body: any } }) {
+  try {
+    const res = await fetch(url, {
+      method: 'POST',
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(arg.body),
+    })
+    if (!res.ok) {
+      const error: any = new Error('An error occurred while fetching the data')
+      error.info = await res.json()
+      error.status = res.status
+      throw error
+    }
+    return res.json()
+  } catch (e) {
+    console.log({ e })
+    throw new Error('Failed to fetch data')
+  }
+}

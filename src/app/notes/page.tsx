@@ -1,3 +1,6 @@
+import { subjectList } from '@/lib/subjects/subjectList'
+import Link from 'next/link'
+
 const Page = () => {
   return (
     <section className='flex flex-col justify-center items-center bg-primary_bg_color px-4 pt-12 pb-32 mt-[64px] text-center text-slate-300'>
@@ -11,97 +14,24 @@ const Page = () => {
           9 CGPA holders
         </span>
       </h1>
-      <main className='grid grid-cols-3 gap-4 max-w-7xl w-full mt-8'>
-        <div className='relative h-48 rounded-[8px]'>
-          <img
-            src='https://images.pexels.com/photos/5428264/pexels-photo-5428264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-            className='absolute w-full h-full object-cover rounded-[8px]'
-            alt=''
-          />
-          <span className='absolute text-slate-300 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary_bg_color px-4 py-2'>
-            Maths
-          </span>
-        </div>
-        <div className='relative h-48 rounded-[8px]'>
-          <img
-            src='https://images.pexels.com/photos/5428264/pexels-photo-5428264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-            className='absolute w-full h-full object-cover rounded-[8px]'
-            alt=''
-          />
-          <span className='absolute text-slate-300 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary_bg_color px-4 py-2'>
-            Maths
-          </span>
-        </div>
-        <div className='relative h-48 rounded-[8px]'>
-          <img
-            src='https://images.pexels.com/photos/5428264/pexels-photo-5428264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-            className='absolute w-full h-full object-cover rounded-[8px]'
-            alt=''
-          />
-          <span className='absolute text-slate-300 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary_bg_color px-4 py-2'>
-            Maths
-          </span>
-        </div>
-        <div className='relative h-48 rounded-[8px]'>
-          <img
-            src='https://images.pexels.com/photos/5428264/pexels-photo-5428264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-            className='absolute w-full h-full object-cover rounded-[8px]'
-            alt=''
-          />
-          <span className='absolute text-slate-300 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary_bg_color px-4 py-2'>
-            Maths
-          </span>
-        </div>
-        <div className='relative h-48 rounded-[8px]'>
-          <img
-            src='https://images.pexels.com/photos/5428264/pexels-photo-5428264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-            className='absolute w-full h-full object-cover rounded-[8px]'
-            alt=''
-          />
-          <span className='absolute text-slate-300 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary_bg_color px-4 py-2'>
-            Maths
-          </span>
-        </div>
-        <div className='relative h-48 rounded-[8px]'>
-          <img
-            src='https://images.pexels.com/photos/5428264/pexels-photo-5428264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-            className='absolute w-full h-full object-cover rounded-[8px]'
-            alt=''
-          />
-          <span className='absolute text-slate-300 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary_bg_color px-4 py-2'>
-            Maths
-          </span>
-        </div>
-        <div className='relative h-48 rounded-[8px]'>
-          <img
-            src='https://images.pexels.com/photos/5428264/pexels-photo-5428264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-            className='absolute w-full h-full object-cover rounded-[8px]'
-            alt=''
-          />
-          <span className='absolute text-slate-300 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary_bg_color px-4 py-2'>
-            Maths
-          </span>
-        </div>
-        <div className='relative h-48 rounded-[8px]'>
-          <img
-            src='https://images.pexels.com/photos/5428264/pexels-photo-5428264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-            className='absolute w-full h-full object-cover rounded-[8px]'
-            alt=''
-          />
-          <span className='absolute text-slate-300 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary_bg_color px-4 py-2'>
-            Maths
-          </span>
-        </div>
-        <div className='relative h-48 rounded-[8px]'>
-          <img
-            src='https://images.pexels.com/photos/5428264/pexels-photo-5428264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-            className='absolute w-full h-full object-cover rounded-[8px]'
-            alt=''
-          />
-          <span className='absolute text-slate-300 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary_bg_color px-4 py-2'>
-            Maths
-          </span>
-        </div>
+      <main className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl w-full mt-8'>
+        {subjectList.map((subject, i: number) => (
+          <Link
+            key={i}
+            href={`/notes/${subject[0]}`}
+            className='relative h-48 rounded-[8px]'
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={subject[1]}
+              alt={subject[0]}
+              className='absolute w-full h-full object-cover rounded-[8px] hover:scale-105 transition'
+            />
+            <span className='absolute text-slate-300 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary_bg_color px-4 py-2 text-sm font-bold'>
+              {subject[0]}
+            </span>
+          </Link>
+        ))}
       </main>
     </section>
   )

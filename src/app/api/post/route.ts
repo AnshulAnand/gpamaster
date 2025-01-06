@@ -1,15 +1,16 @@
 import connect from '@/lib/db'
 import Post from '@/lib/models/post.model'
+import User from '@/lib/models/user.model'
 import { NextRequest, NextResponse } from 'next/server'
 
 export const GET = async (request: NextRequest) => {
   const searchParams = request.nextUrl.searchParams
-  const user = searchParams.get('userId')
+  const username = searchParams.get('user')
   const page = parseInt(searchParams.get('page') as string)
   const limit = parseInt(searchParams.get('limit') as string)
   const skip = (page - 1) * limit
 
-  console.log({ user, page, limit, skip })
+  const foundUser = await User.findOne({ username })
 
   type SearchQuery = {
     user?: string
@@ -17,9 +18,7 @@ export const GET = async (request: NextRequest) => {
 
   const searchQuery: SearchQuery = {}
 
-  if (user) searchQuery.user = user
-
-  console.log({ searchQuery })
+  if (username) searchQuery.user = foundUser._id
 
   try {
     await connect()

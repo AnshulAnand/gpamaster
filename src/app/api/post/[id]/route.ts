@@ -13,8 +13,6 @@ export const GET = async (
     await connect()
     const post = await Post.findById(id)
 
-    console.log({ post })
-
     if (!post)
       return new NextResponse(JSON.stringify({ message: 'Post not found' }), {
         status: 400,
@@ -29,7 +27,7 @@ export const GET = async (
 
     return new NextResponse(JSON.stringify(post), { status: 200 })
   } catch (error: any) {
-    return new NextResponse('Error in fetching users' + error.message, {
+    return new NextResponse('Error in fetching post' + error.message, {
       status: 500,
     })
   }

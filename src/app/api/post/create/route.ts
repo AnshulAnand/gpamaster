@@ -7,7 +7,6 @@ import Post from '@/lib/models/post.model'
 export const POST = async (request: NextRequest) => {
   const userId = (await headers()).get('userId')
   const body = await request.json()
-  console.log({ userId, body })
 
   if (!body.title || !body.body || !userId)
     return new NextResponse(
@@ -40,7 +39,7 @@ export const POST = async (request: NextRequest) => {
 
     return new NextResponse(JSON.stringify(newPost), { status: 200 })
   } catch (error: any) {
-    return new NextResponse('Error in fetching users' + error.message, {
+    return new NextResponse('Error in creating post' + error.message, {
       status: 500,
     })
   }

@@ -7,7 +7,7 @@ const Footer = () => {
       id='footer'
       className='flex flex-col justify-center items-center bg-secondary_bg_color px-4 py-32 text-center'
     >
-      <div className='flex justify-between items-start gap-8 max-w-7xl w-full'>
+      <div className='flex justify-between items-start flex-col lg:flex-row gap-8 max-w-7xl w-full'>
         <div className='text-left'>
           <h1 className='text-slate-300 text-2xl font-semibold'>GPA Master</h1>
           <p className='text-slate-400 text-base'>
@@ -32,7 +32,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className='flex gap-16'>
+        <div className='flex flex-col md:flex-row gap-6 md:gap-16'>
           <ul className='flex flex-col text-left text-slate-400'>
             <li className='text-slate-300 font-bold'>Contact</li>
             <li>

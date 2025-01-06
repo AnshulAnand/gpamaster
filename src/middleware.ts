@@ -10,15 +10,11 @@ export async function middleware(request: NextRequest) {
   const cookieStore = await cookies()
   const JWT = cookieStore.get('jwt')?.value
 
-  console.log({ JWT })
-
   if (!JWT) return NextResponse.redirect(new URL('/auth', request.url))
 
   const secret = new TextEncoder().encode(process.env.JWT_SECRET!)
 
   const { payload, protectedHeader } = await jose.jwtVerify(JWT, secret)
-
-  console.log({ payload, protectedHeader })
 
   const newHeaders = new Headers(request.headers)
 
@@ -26,8 +22,6 @@ export async function middleware(request: NextRequest) {
 
   newHeaders.set('userId', data.userId)
   newHeaders.set('username', data.username)
-
-  console.log({ newHeaders })
 
   return NextResponse.next({
     request: {
@@ -64,5 +58,12 @@ export async function middleware(request: NextRequest) {
 
 // See "Matching Paths" below to learn more
 export const config = {
-  matcher: ['/api/user/current', '/api/post/create', '/api/comment/create'],
+  matcher: [
+    '/api/user/current',
+    '/api/user/logout',
+    '/api/post/create',
+    '/api/comment/create',
+    '/api/payments/orders',
+    '/api/payments/verify',
+  ],
 }

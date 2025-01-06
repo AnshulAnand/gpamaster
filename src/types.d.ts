@@ -38,3 +38,12 @@ export interface IComment {
   updatedAt: Date
   __v: number
 }
+
+type BlogPost = {
+  id: string
+  title: string
+  date: string
+  image: string
+  tag: string
+  read: number
+}
