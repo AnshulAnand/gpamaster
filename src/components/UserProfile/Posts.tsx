@@ -6,7 +6,7 @@ import Link from 'next/link'
 import UserPostLoadingSkeleton from '../Skeletons/UserPostLoadingSkeleton'
 
 const Posts = ({ id }: { id: string }) => {
-  const { data, isError, isLoading } = usePosts(1, 25, id)
+  const { data, isError, isLoading } = usePosts(1, 15, id)
 
   console.log({ data })
 
@@ -31,20 +31,15 @@ const Posts = ({ id }: { id: string }) => {
             <div className='flex items-center gap-4 text-sm mb-8'>
               <span>{returnDate(post)}</span>
               <span className='w-2 h-2 bg-slate-300 rotate-45'></span>
-              <span>{readingTime(post.body)} Min read</span>
+              <span>{readingTime(post.body)} min read</span>
             </div>
             <h3 className='text-white text-2xl text-left'>{post.title}</h3>
             <div className='mt-4 flex flex-wrap gap-4'>
               {post.tags.map((tag: string, i: number) => (
-                <p key={i}>#{tag}</p>
+                <p key={i}>{tag && `#${tag}`}</p>
               ))}
             </div>
-            <p className='text-left mt-4'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-              cumque rerum cum. Tempora nobis voluptatum amet perspiciatis
-              deserunt delectus fuga! Pariatur fuga excepturi inventore
-              similique mollitia doloremque doloribus esse illo!
-            </p>
+            <p className='text-left mt-4'>{post.body.slice(0, 100) + '...'}</p>
             <p className='mt-4 text-left'>by {id}</p>
           </div>
         </Link>

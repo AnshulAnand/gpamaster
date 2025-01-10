@@ -7,6 +7,15 @@ import { usePosts } from '@/swr/post'
 import { IPost } from '@/types'
 import readingTime, { returnDate } from '@/lib/utils'
 import UserPostLoadingSkeleton from '@/components/Skeletons/UserPostLoadingSkeleton'
+import { useUserById } from '@/swr/user'
+
+const FetchUser = ({ id }: { id: string }) => {
+  const { user, isError, isLoading } = useUserById(id, 'id')
+
+  if (isLoading) return <p className='mt-4 text-left'>by loading...</p>
+
+  return <p className='mt-4 text-left'>by {user.name}</p>
+}
 
 type FetchPostsProps = {
   page: number
@@ -43,16 +52,16 @@ const FetchPosts = ({ page }: FetchPostsProps) => {
         <div className='flex items-center gap-4 text-sm mb-8'>
           <span>{returnDate(post)}</span>
           <span className='w-2 h-2 bg-slate-300 rotate-45'></span>
-          <span>{readingTime(post.body)} Min read</span>
+          <span>{readingTime(post.body)} min read</span>
         </div>
         <h3 className='text-white text-2xl text-left'>{post.title}</h3>
         <div className='mt-4 flex flex-wrap gap-4'>
           {post.tags.map((tag: string, i: number) => (
-            <p key={i}>#{tag}</p>
+            <p key={i}>{tag && `#${tag}`}</p>
           ))}
         </div>
         <p className='text-left mt-4'>{post.body.slice(0, 100) + '...'}</p>
-        <p className='mt-4 text-left'>by user: {post.user}</p>
+        <FetchUser id={post.user} />
       </div>
     </Link>
   ))
@@ -82,7 +91,7 @@ const Page = () => {
       <h1 className='bg-gradient-to-r from-slate-200 via-slate-300 to-slate-500 inline-block text-transparent bg-clip-text text-3xl md:text-5xl font-extrabold text-center mb-8 mb:mb-16'>
         Community Posts
       </h1>
-      <main className='flex flex-col items-center justify-between max-w-7xl w-full mx-auto gap-6'>
+      <main className='flex flex-col items-center justify-between max-w-6xl w-full mx-auto gap-6'>
         {list}
       </main>
 
