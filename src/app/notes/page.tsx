@@ -5,7 +5,7 @@ const Page = () => {
   return (
     <section className='flex flex-col justify-center items-center bg-primary_bg_color px-4 pt-12 pb-32 mt-[64px] text-center text-slate-300'>
       <span className='bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 mt-2 rounded-full px-4 py-1 shadow-[0px_50px_1000px_200px_rgba(59,_130,_246,_0.15)]'>
-        <p className='text-black text-sm font-medium'>Study Material</p>
+        <p className='text-black text-xs font-medium'>Study Material</p>
       </span>
       <h1 className='bg-gradient-to-r from-slate-200 via-slate-300 to-slate-500 inline-block text-transparent bg-clip-text text-3xl font-extrabold text-center mt-4'>
         Subject wise study material
