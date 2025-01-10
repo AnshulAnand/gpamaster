@@ -2,7 +2,7 @@
 
 import useSWR from 'swr'
 import useSWRMutation from 'swr/mutation'
-import { GET, PATCH, POST } from '@/lib/fetch'
+import { GET, POST } from '@/lib/fetch'
 import { IUser } from '@/types'
 
 // GET current user

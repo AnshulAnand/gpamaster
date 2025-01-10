@@ -100,7 +100,7 @@ const NavBar = () => {
           </ul>
         </div>
 
-        <div className='flex gap-4'>
+        <div className='flex justify-center items-center gap-4'>
           {currentUser ? (
             <Link
               className='flex justify-center items-center gap-2 text-slate-300'

@@ -8,9 +8,15 @@ import { storage } from '@/firebase'
 import { IPost } from '@/types'
 import { nanoid } from 'nanoid'
 import toast from 'react-hot-toast'
+import useCurrentUser from '@/swr/user'
+import PageLoadingSkeleton from '@/components/Skeletons/PageLoadingSkeleton'
 
 const Page = () => {
   const router = useRouter()
+  const { currentUser, isError, isLoading } = useCurrentUser()
+  const { triggerPostMutate, postError, isPostMutating } = useMutatePost()
+
+  console.log({ currentUser })
 
   const [postData, setPostData] = useState({
     title: '',
@@ -35,6 +41,13 @@ const Page = () => {
     })
   }, [image])
 
+  if (isLoading) return <PageLoadingSkeleton />
+
+  if (!currentUser) {
+    router.push('/auth')
+    return
+  }
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const name = e.target.name
     const value = e.target.value
@@ -46,8 +59,6 @@ const Page = () => {
   }) => {
     setTextarea(event.target.value)
   }
-
-  const { triggerPostMutate, postError, isPostMutating, data } = useMutatePost()
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -123,6 +134,7 @@ const Page = () => {
                   id='dropzone-file'
                   type='file'
                   className='hidden'
+                  // @ts-ignore
                   onChange={e => setImage(e.target.files[0])}
                 />
               </label>

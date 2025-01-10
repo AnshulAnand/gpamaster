@@ -133,11 +133,12 @@ const Comments = ({ post }: Props) => {
           name='textarea'
           value={textarea}
           onChange={handleTextareaChange}
+          placeholder='Write your comment...'
           className='bg-secondary_bg_color p-4 text-slate-300 col-span-5 rounded'
         />
         <button
           onClick={handleSubmit}
-          className='bg-blue-900 h-12 hover:bg-blue-800 transition rounded-full'
+          className='flex justify-center items-center bg-blue-900 h-12 hover:bg-blue-800 transition rounded-full px-2 py-4'
         >
           Post
         </button>

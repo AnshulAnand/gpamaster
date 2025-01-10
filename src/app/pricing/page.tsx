@@ -5,6 +5,7 @@ import { GiFullPizza } from 'react-icons/gi'
 import { useRouter } from 'next/navigation'
 import useCurrentUser from '@/swr/user'
 import dayjs from 'dayjs'
+import PageLoadingSkeleton from '@/components/Skeletons/PageLoadingSkeleton'
 
 const Page = () => {
   const { push } = useRouter()
@@ -13,7 +14,7 @@ const Page = () => {
 
   console.log({ currentUser })
 
-  if (isLoading) return <p>loading...</p>
+  if (isLoading) return <PageLoadingSkeleton />
 
   if (!currentUser) {
     push('/auth')
@@ -188,7 +189,7 @@ const Page = () => {
 
           <button
             onClick={displayRazorpay}
-            className='lg:hidden mt-16 flex items-center justify-center rounded'
+            className='lg:hidden mt-16 flex items-center justify-center w-full rounded'
           >
             <div className='w-full rounded bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1'>
               <div className='flex h-full w-full items-center justify-center bg-secondary_bg_color back rounded'>

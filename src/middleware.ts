@@ -9,8 +9,12 @@ import * as jose from 'jose'
 export async function middleware(request: NextRequest) {
   const cookieStore = await cookies()
   const JWT = cookieStore.get('jwt')?.value
+  const originalUrl =
+    request.nextUrl.protocol +
+    request.headers.get('host') +
+    request.nextUrl.pathname
 
-  if (!JWT) return NextResponse.redirect(new URL('/auth', request.url))
+  if (!JWT) return NextResponse.redirect(new URL('/auth', originalUrl))
 
   const secret = new TextEncoder().encode(process.env.JWT_SECRET!)
 
@@ -53,7 +57,7 @@ export async function middleware(request: NextRequest) {
   // next()
   // })
 
-  return NextResponse.redirect(new URL('/home', request.url))
+  // return NextResponse.redirect(new URL('/home', request.url))
 }
 
 // See "Matching Paths" below to learn more

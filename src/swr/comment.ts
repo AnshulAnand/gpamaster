@@ -2,7 +2,7 @@
 
 import useSWR from 'swr'
 import useSWRMutation from 'swr/mutation'
-import { DELETE, GET, PATCH, POST } from '@/lib/fetch'
+import { GET, POST } from '@/lib/fetch'
 import { IComment } from '@/types'
 
 // GET Comments

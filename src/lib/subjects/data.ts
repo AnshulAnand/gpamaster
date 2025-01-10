@@ -890,6 +890,108 @@ const data = {
       ],
     ],
   },
+  Chemistry: {
+    books: [
+      [
+        'lorem ipsum',
+        '19 Dec 2024',
+        'lorem',
+        'A-Textbook-of-Environmental-Studies-by-Shashi-Chawla-(z-lib.org)-(1)',
+      ],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'evs_kaushik-and-kaushik-book'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Green-Chemistry-_Sunita-Rattan'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Jain-&-Jain-(1)'],
+    ],
+    'hand-written': [
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Air-Pollution_L2-(1)'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Bioremediation_L7-(1)'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Case-Studies_L8-(1)'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Chromatography-Edited-(1)'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Chromatography'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'CO2_EXPERIMENT_SAMPLE-(1)'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Electronic-Waste_L6-(1)'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Estimation-of-CO2-(1)'],
+      [
+        'lorem ipsum',
+        '19 Dec 2024',
+        'lorem',
+        'Estimation-of-Hardness-of-Water',
+      ],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'GREEN-CHEM-PPT-(2)'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Green-Chem_1'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Green-Fuel_Unit-IV_Final-(2)'],
+      [
+        'lorem ipsum',
+        '19 Dec 2024',
+        'lorem',
+        'Hardness-of-water_Experiment_Sample',
+      ],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Index-&'],
+      [
+        'lorem ipsum',
+        '19 Dec 2024',
+        'lorem',
+        'Introduction-to-Environmental-Sciences_L1-(1)',
+      ],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Nuclear-Hazards_L5-(1)'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'sample-practical-'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Satya-Prakash-(1)'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Soil-Pollution_SWM_L4-(1)'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Titration-1'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Titration-2-(1)'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'titration-2'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'titration-3'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Titration-Demonstration'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Titration-topics'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Titrations'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Unit-4_1'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Unit-4_2_new'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Unit-4_Part_B_Biopolymers-(1)'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'UV-Visible_Unit5_20.10-(1)'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'volumetric-analysis-'],
+      ['lorem ipsum', '19 Dec 2024', 'lorem', 'Water-Pollution_L3-(1)'],
+    ],
+    syllabus: [['lorem ipsum', '19 Dec 2024', 'lorem', 'chemistry-syllabus']],
+    pyqs: [
+      ['chem-mid-sem-2023', '19 Dec 2024', 'lorem', 'chem-mid-sem-2023'],
+      ['chem-end-sem-2023', '19 Dec 2024', 'lorem', 'chem-end-sem-2023'],
+    ],
+    yt: [
+      [
+        'unit1 ',
+        '19 Dec 2024',
+        'lorem',
+        'https://www.youtube.com/playlist?list=PLEtCpM3x4BD_pYbeFa6AYqpFEDRZRaqqe',
+      ],
+
+      [
+        'unit2',
+        '19 Dec 2024',
+        'lorem',
+        'https://www.youtube.com/playlist?list=PLjgyGylma3IHGxlf7iP6JDi73GKfc4ekB',
+      ],
+
+      [
+        'unit3',
+        '19 Dec 2024',
+        'lorem',
+        'https://www.youtube.com/playlist?list=PL-aAskflKOZB1E11xokkpq28mPYAMfK0j',
+      ],
+
+      [
+        'unit4 ',
+        '19 Dec 2024',
+        'lorem',
+        'https://www.youtube.com/playlist?list=PLiYAH68F-CTDvXZ2G5JICP91oxb1WX1d_',
+      ],
+      [
+        'unit5  (Videos = 81,82,84-87,97,98)',
+        '19 Dec 2024',
+        'lorem',
+        'https://www.youtube.com/playlist?list=PLQnNyE1lxfVLaV7GIpKYfGYiHsZiTYB5u',
+      ],
+    ],
+  },
 }
 
 export default data

@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 import { pdfjs, Document, Page } from 'react-pdf'
 import { redirect } from 'next/navigation'
@@ -37,10 +39,10 @@ const PDFViewer = ({ pdfUrl, setModalOpenFunc }: Props) => {
   return (
     <>
       {/* bg cover */}
-      <div className='absolute top-0 left-0 h-full w-full bg-black opacity-60'></div>
-      <section className='absolute top-0 w-full flex justify-center'>
+      <div className='fixed top-0 left-0 h-full w-full bg-black z-[9999]'></div>
+      <section className='fixed top-2 w-full flex justify-center z-[9999]'>
         {/* pdf viewer */}
-        <main className='m-4 p-4 max-w-[1400px] h-[1000px] w-full bg-secondary_bg_color z-50'>
+        <main className='m-4 p-4 max-w-[1400px] h-[calc(100vh_-_75px)] w-full bg-secondary_bg_color z-50'>
           <div className='flex flex-wrap justify-between items-center mb-3'>
             <p className='text-slate-400 text-sm'>
               {/* Page {pageNumber} of {numPages} */}

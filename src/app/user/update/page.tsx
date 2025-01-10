@@ -1,7 +1,7 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
-import { SetStateAction, useState } from 'react'
+import { SetStateAction, useEffect, useState } from 'react'
 import { IUser } from '@/types'
 import useCurrentUser, { useMutateUser } from '@/swr/user'
 import toast from 'react-hot-toast'
@@ -12,9 +12,14 @@ const Page = () => {
   const currentUser = useCurrentUser()
 
   const [userData, setUserData] = useState({
-    name: currentUser.currentUser.name,
+    name: '',
   })
-  const [textarea, setTextarea] = useState(currentUser.currentUser.bio)
+  const [textarea, setTextarea] = useState('')
+
+  useEffect(() => {
+    setUserData({ name: currentUser.currentUser.name })
+    setTextarea(currentUser.currentUser.bio)
+  }, [])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const name = e.target.name

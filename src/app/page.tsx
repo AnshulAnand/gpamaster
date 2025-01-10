@@ -87,7 +87,7 @@ export default function Home() {
               </div>
             </Link>
             <Link
-              href={posts[1].id}
+              href={`/blog/${posts[1].id}`}
               className='relative min-h-[400px] text-white'
             >
               <img
@@ -95,7 +95,7 @@ export default function Home() {
                 alt={posts[1].title}
                 className='absolute w-full h-full object-cover'
               />
-              <span className='absolute top-4 right-4 p-4 text-base bg-primary_bg_color text-white uppercase z-10'>
+              <span className='absolute top-4 right-4 px-4 py-2 text-xs bg-primary_bg_color text-white uppercase z-10'>
                 {posts[1].tag}
               </span>
               <div className='absolute bottom-0 left-0 px-6 py-8 z-10 bg-transparent_dark_color w-full'>
@@ -110,45 +110,49 @@ export default function Home() {
               </div>
             </Link>
             <Link
-              href={``}
+              href={`/blog/${posts[0].id}`}
               className='hidden md:block relative min-h-[400px] text-white'
             >
               <img
-                src={`https://images.pexels.com/photos/5428264/pexels-photo-5428264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
-                alt=''
+                src={posts[0].image}
+                alt={posts[0].title}
                 className='absolute w-full h-full object-cover'
               />
-              <span className='absolute top-4 right-4 p-4 text-base bg-primary_bg_color text-white uppercase z-10'>
-                {'sports'}
+              <span className='absolute top-4 right-4 px-4 py-2 text-xs bg-primary_bg_color text-white uppercase z-10'>
+                {posts[0].tag}
               </span>
               <div className='absolute bottom-0 left-0 px-6 py-8 z-10 bg-transparent_dark_color w-full'>
                 <div className='flex items-center gap-4 text-sm mb-8'>
-                  <span>{'Dec 5th 2021'}</span>
+                  <span>{posts[0].date}</span>
                   <span className='w-2 h-2 bg-slate-300 rotate-45'></span>
-                  <span>{'1 min'} Min read</span>
+                  <span>{posts[0].read} Min read</span>
                 </div>
-                <h3 className='text-white text-2xl text-left'>{'Title'}</h3>
+                <h3 className='text-white text-2xl text-left'>
+                  {posts[0].title.slice(0, 50) + '...'}
+                </h3>
               </div>
             </Link>
             <Link
-              href={``}
+              href={`/blog/${posts[1].id}`}
               className='hidden md:block relative min-h-[400px] text-white xl:col-span-2'
             >
               <img
-                src={`https://images.pexels.com/photos/5428264/pexels-photo-5428264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
-                alt=''
+                src={posts[1].image}
+                alt={posts[1].title}
                 className='absolute w-full h-full object-cover'
               />
-              <span className='absolute top-4 right-4 p-4 text-base bg-primary_bg_color text-white uppercase z-10'>
-                {'sports'}
+              <span className='absolute top-4 right-4 px-4 py-2 text-xs bg-primary_bg_color text-white uppercase z-10'>
+                {posts[1].tag}
               </span>
               <div className='absolute bottom-0 left-0 px-6 py-8 z-10 bg-transparent_dark_color w-full'>
                 <div className='flex items-center gap-4 text-sm mb-8'>
-                  <span>{'Dec 5th 2021'}</span>
+                  <span>{posts[1].date}</span>
                   <span className='w-2 h-2 bg-slate-300 rotate-45'></span>
-                  <span>{'1 min'} Min read</span>
+                  <span>{posts[1].read} Min read</span>
                 </div>
-                <h3 className='text-white text-2xl text-left'>{'Title'}</h3>
+                <h3 className='text-white text-2xl text-left'>
+                  {posts[1].title}
+                </h3>
               </div>
             </Link>
           </div>
@@ -170,7 +174,7 @@ export default function Home() {
       {/* Notes */}
       <section className='flex flex-col justify-center items-center bg-primary_bg_color px-4 py-32 text-center'>
         <span className='bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 mt-2 rounded-full px-4 py-1 shadow-[0px_50px_1000px_200px_rgba(59,_130,_246,_0.15)]'>
-          <p className='text-black text-sm font-medium'>Study Material</p>
+          <p className='text-black text-xs font-medium'>Study Material</p>
         </span>
         <h1 className='bg-gradient-to-r from-slate-200 via-slate-300 to-slate-500 inline-block text-transparent bg-clip-text text-3xl font-extrabold text-center mt-4'>
           Enhance your preparation <br /> with Study Material provided by us

@@ -3,13 +3,14 @@ export const subjectList = [
   //   'Computer-Programming',
   //   'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   // ],
-  // [
-  //   'Chemistry',
-  //   'https://images.pexels.com/photos/1366942/pexels-photo-1366942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  // ],
+
   [
     'Maths',
     'https://images.pexels.com/photos/240163/pexels-photo-240163.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  ],
+  [
+    'Chemistry',
+    'https://images.pexels.com/photos/1366942/pexels-photo-1366942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   ],
   // [
   //   'Mathematics-1',

@@ -1,5 +1,6 @@
 import { getGoogleOAuthURL } from '@/lib/utils'
 import { FcGoogle } from 'react-icons/fc'
+import { TiArrowSortedDown } from 'react-icons/ti'
 
 const Page = () => {
   return (
@@ -21,9 +22,15 @@ const Page = () => {
           </h1>
 
           <p className='mt-4 text-lg'>Continue to your account</p>
-          <p className='text-5xl mt-4 text-slate-200'>&#129171;</p>
-          <p className='text-4xl text-slate-300'>&#129171;</p>
-          <p className='text-2xl text-slate-400'>&#129171;</p>
+          <p className='flex justify-center items-center text-5xl mt-4 text-slate-200'>
+            <TiArrowSortedDown />
+          </p>
+          <p className='flex justify-center items-center text-4xl text-slate-300'>
+            <TiArrowSortedDown />
+          </p>
+          <p className='flex justify-center items-center text-2xl text-slate-400 mb-4'>
+            <TiArrowSortedDown />
+          </p>
 
           <a
             href={getGoogleOAuthURL()}

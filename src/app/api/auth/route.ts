@@ -62,7 +62,11 @@ export const GET = async (request: NextRequest) => {
 
       // res.redirect('/')
       // return
-      return NextResponse.redirect(new URL('/', request.url))
+      const originalUrl =
+        request.nextUrl.protocol +
+        request.headers.get('host') +
+        request.nextUrl.pathname
+      return NextResponse.redirect(new URL('/', originalUrl))
     }
 
     const userObject = {
@@ -99,7 +103,11 @@ export const GET = async (request: NextRequest) => {
       sameSite: 'lax',
       maxAge: 30 * 24 * 60 * 60,
     })
-    return NextResponse.redirect(new URL('/', request.url))
+    const originalUrl =
+      request.nextUrl.protocol +
+      request.headers.get('host') +
+      request.nextUrl.pathname
+    return NextResponse.redirect(new URL('/', originalUrl))
   } catch (error: any) {
     return new NextResponse('Error in fetching users' + error.message, {
       status: 500,

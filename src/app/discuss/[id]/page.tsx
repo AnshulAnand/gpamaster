@@ -8,11 +8,10 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
   const id = (await params).id
   const domain = process.env.NEXT_PUBLIC_DOMAIN
   const post: IPost = await GET(`${domain}/api/post/${id}`)
-  console.log({ post })
 
   return (
     <section className='flex flex-col justify-center items-center bg-primary_bg_color px-4 pt-6 pb-32 mt-[64px] text-center text-slate-300 relative'>
-      <main className='grid md:grid-cols-3 gap-4 max-w-7xl'>
+      <main className='grid md:grid-cols-3 gap-4 max-w-7xl w-full'>
         <div className='md:hidden bg-secondary_bg_color h-[200px] mt-4 rounded'></div>
         <div className='md:col-span-2'>
           {/* post */}
