@@ -12,6 +12,8 @@ const Posts = ({ id }: { id: string }) => {
 
   if (isLoading) return <UserPostLoadingSkeleton />
 
+  if (isError) return <h1>An Error Occurred...</h1>
+
   return (
     <>
       {data.map((post, i: number) => (

@@ -7,17 +7,17 @@ import Razorpay from 'razorpay'
 export const POST = async (request: NextRequest) => {
   const userId = (await headers()).get('userId')
 
-  const foundUser = await User.findById(userId)
-
-  const originalUrl =
-    request.nextUrl.protocol +
-    request.headers.get('host') +
-    request.nextUrl.pathname
-
-  if (!foundUser) return NextResponse.redirect(new URL('/auth', originalUrl))
-
   try {
     await connect()
+
+    const foundUser = await User.findById(userId)
+
+    const originalUrl =
+      request.nextUrl.protocol +
+      request.headers.get('host') +
+      request.nextUrl.pathname
+
+    if (!foundUser) return NextResponse.redirect(new URL('/auth', originalUrl))
 
     const instance = new Razorpay({
       key_id: process.env.RAZORPAY_KEY_ID!,

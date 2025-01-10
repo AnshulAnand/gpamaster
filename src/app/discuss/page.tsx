@@ -33,7 +33,7 @@ const FetchPosts = ({ page }: FetchPostsProps) => {
       </>
     )
 
-  if (isError) return <h1>{isError.info.message}</h1>
+  if (isError) return <h1>An Error Occurred...</h1>
 
   return data.map((post: IPost, i: number) => (
     <Link

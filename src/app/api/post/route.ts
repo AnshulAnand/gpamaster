@@ -10,18 +10,19 @@ export const GET = async (request: NextRequest) => {
   const limit = parseInt(searchParams.get('limit') as string)
   const skip = (page - 1) * limit
 
-  const foundUser = await User.findOne({ username })
-
-  type SearchQuery = {
-    user?: string
-  }
-
-  const searchQuery: SearchQuery = {}
-
-  if (username) searchQuery.user = foundUser._id
-
   try {
     await connect()
+
+    const foundUser = await User.findOne({ username })
+
+    type SearchQuery = {
+      user?: string
+    }
+
+    const searchQuery: SearchQuery = {}
+
+    if (username) searchQuery.user = foundUser._id
+
     const posts = await Post.find(searchQuery)
       .sort({ _id: -1 })
       .limit(limit)
