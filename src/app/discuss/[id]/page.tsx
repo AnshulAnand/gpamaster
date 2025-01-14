@@ -33,7 +33,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
 
             <div className='flex gap-4 my-4'>
               {post.tags.map((tag: string, i: number) => (
-                <p key={i}>#{tag}</p>
+                <p key={i}>{tag && `#${tag}`}</p>
               ))}
             </div>
 
