@@ -50,7 +50,7 @@ export const POST = async (request: NextRequest) => {
     // SAVE THE DETAILS IN YOUR DATABASE
 
     foundUser.paymentStatus = true
-    foundUser.lastPaymentDate = dayjs().format('YYYY-DD-MM')
+    foundUser.lastPaymentDate = dayjs().format('YYYY-MM-DD')
     foundUser.paymentId = razorpayPaymentId
 
     await foundUser.save()

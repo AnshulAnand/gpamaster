@@ -26,8 +26,9 @@ const PDFViewer = ({ pdfUrl, setModalOpenFunc }: Props) => {
   if (isLoading) return <p>loading...</p>
   if (!currentUser) redirect('/auth')
 
-  const date1 = dayjs(dayjs().format('YYYY-DD-MM'))
+  const date1 = dayjs(dayjs().format('YYYY-MM-DD'))
   const dateDiff = date1.diff(currentUser.lastPaymentDate, 'day')
+  console.log({ date1, dateDiff })
 
   if (!currentUser.paymentStatus) redirect('/pricing')
   if (dateDiff > 120) redirect('/pricing')
