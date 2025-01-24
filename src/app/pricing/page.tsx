@@ -125,6 +125,13 @@ const Page = () => {
           (which you&apos;ll probably devour in weekend ;)
         </p>
       </div>
+      {/* Banner */}
+      <div className='flex justify-center items-center bg-green-700 p-4 mt-4 rounded-[8px] max-w-5xl w-full'>
+        <p className='text-slate-300'>
+          26% OFF to Celebrate Our Republic Day (Valid till 1 Feb)
+        </p>
+      </div>
+
       <main className='grid lg:grid-cols-3 gap-14 max-w-5xl w-full text-slate-300 bg-secondary_bg_color p-8 rounded-[8px] mt-6'>
         <div className='flex flex-col justify-between'>
           <h2 className='text-left bg-gradient-to-r from-slate-300 to-slate-400 inline-block text-transparent bg-clip-text text-4xl font-bold'>
