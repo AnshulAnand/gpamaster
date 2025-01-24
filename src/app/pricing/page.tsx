@@ -110,10 +110,10 @@ const Page = () => {
       <div className='text-slate-300 flex justify-center gap-2 mb-4'>
         <span className='text-4xl mt-1'>&#8377;</span>
         <h1 className='bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 inline-an cblock text-transparent bg-clip-text text-7xl font-extrabold'>
-          199
+          147
         </h1>
         <h2 className='font-bold text-red-500 text-5xl ml-2 mt-3 line-through'>
-          249
+          199
         </h2>
       </div>
       <div className='text-slate-300 flex flex-col lg:flex-row justify-center items-center'>
