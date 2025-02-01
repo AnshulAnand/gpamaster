@@ -25,7 +25,7 @@ export const POST = async (request: NextRequest) => {
     })
 
     const options = {
-      amount: 147 * 100, // amount in smallest currency unit
+      amount: 199 * 100, // amount in smallest currency unit
       currency: 'INR',
       receipt: userId!,
     }

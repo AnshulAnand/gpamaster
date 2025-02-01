@@ -110,10 +110,10 @@ const Page = () => {
       <div className='text-slate-300 flex justify-center gap-2 mb-4'>
         <span className='text-4xl mt-1'>&#8377;</span>
         <h1 className='bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 inline-an cblock text-transparent bg-clip-text text-7xl font-extrabold'>
-          147
+          199
         </h1>
         <h2 className='font-bold text-red-500 text-5xl ml-2 mt-3 line-through'>
-          199
+          249
         </h2>
       </div>
       <div className='text-slate-300 flex flex-col lg:flex-row justify-center items-center'>
@@ -126,11 +126,11 @@ const Page = () => {
         </p>
       </div>
       {/* Banner */}
-      <div className='flex justify-center items-center bg-green-700 p-4 mt-4 rounded-[8px] max-w-5xl w-full'>
+      {/* <div className='flex justify-center items-center bg-green-700 p-4 mt-4 rounded-[8px] max-w-5xl w-full'>
         <p className='text-slate-300'>
           26% OFF to Celebrate Our Republic Day (Valid till 1 Feb)
         </p>
-      </div>
+      </div> */}
 
       <main className='grid lg:grid-cols-3 gap-14 max-w-5xl w-full text-slate-300 bg-secondary_bg_color p-8 rounded-[8px] mt-6'>
         <div className='flex flex-col justify-between'>
