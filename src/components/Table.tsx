@@ -8,6 +8,11 @@ type Props = {
 }
 
 const Table = ({ data, isPDF, setPdfUrlFunc, setModalOpenFunc }: Props) => {
+  if (data.length === 0) {
+    return (
+      <h1 className='text-left font-semibold text-slate-400'>Comming soon</h1>
+    )
+  }
   return (
     <div className='relative overflow-x-auto shadow-md rounded mt-2'>
       <table className='w-full text-sm text-left rtl:text-right text-gray-400'>
