@@ -1,7 +1,7 @@
 const data = {
   'Mathematics-1': {
     notes: [
-      // [NAME, DATE MODIFIED, FILE TYPE (PDF or YT LINK), PDF NAME WITHOUT SPACES (YT LINK)]
+      // [NAME, DATE MODIFIED, FILE TYPE (PDF or YT LINK), PDF NAME (OR YT LINK)]
       ['lorem ispum', '19 Dec 2024', 'PDF', 'sample-pdf'],
       ['lorem ispum', '19 Dec 2024', 'PDF', 'sample-pdf'],
       ['lorem ispum', '19 Dec 2024', 'PDF', 'sample-pdf', 'sample-pdf'],

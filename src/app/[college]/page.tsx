@@ -52,17 +52,18 @@ const Page = () => {
     <>
       <section className='flex flex-col justify-center items-center bg-primary_bg_color px-4 pt-12 pb-8 mt-[64px] text-center text-slate-300'>
         {/* Ad Banner */}
-        <div className='relative max-w-6xl h-48 sm:h-80 md:h-[400px] w-full bg-green-200 mb-4'>
+        <div className='relative max-w-5xl h-48 sm:h-80 md:h-[400px] w-full bg-green-200 mb-4'>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className='absolute w-full h-full object-cover'
-            src='/images/banner-1.png'
+            src='/images/Du Banner.jpg'
             alt='banner'
           />
         </div>
 
         <h1 className='bg-gradient-to-r from-slate-200 via-slate-300 to-slate-500 inline-block text-transparent bg-clip-text text-3xl font-extrabold text-center mt-4'>
           <span className='bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 inline-block text-transparent bg-clip-text'>
-            Delhi University
+            University of Delhi
           </span>
         </h1>
         <main className='max-w-7xl w-full mt-8'>
@@ -155,67 +156,95 @@ const Page = () => {
             <h1 className='text-slate-200 text-3xl font-bold text-left border-b border-b-slate-800 pb-2'>
               {subject}
             </h1>
-            <div className='py-4'>
-              <h2 className='text-slate-200 text-xl font-bold text-left'>
-                Notes
-              </h2>
-              <Table
-                setPdfUrlFunc={SetPdfUrlFunc}
-                setModalOpenFunc={SetModalOpenFunc}
-                // @ts-ignore
-                data={du[course][semester][subject]['Notes']}
-                isPDF={true}
-              />
-            </div>
-            <div className='py-4'>
-              <h2 className='text-slate-200 text-xl font-bold text-left'>
-                Books
-              </h2>
-              <Table
-                setPdfUrlFunc={SetPdfUrlFunc}
-                setModalOpenFunc={SetModalOpenFunc}
-                // // @ts-ignore
-                // @ts-ignore
-                data={du[course][semester][subject]['Books']}
-                isPDF={true}
-              />
-            </div>
-            <div className='py-4'>
-              <h2 className='text-slate-200 text-xl font-bold text-left'>
-                Syllabus
-              </h2>
-              <Table
-                setPdfUrlFunc={SetPdfUrlFunc}
-                setModalOpenFunc={SetModalOpenFunc}
-                // @ts-ignore
-                data={du[course][semester][subject]['Syllabus']}
-                isPDF={true}
-              />
-            </div>
-            <div className='py-4'>
-              <h2 className='text-slate-200 text-xl font-bold text-left'>
-                PYQs
-              </h2>
-              <Table
-                setPdfUrlFunc={SetPdfUrlFunc}
-                setModalOpenFunc={SetModalOpenFunc}
-                // @ts-ignore
-                data={du[course][semester][subject].PYQs}
-                isPDF={true}
-              />
-            </div>
-            <div className='py-4'>
-              <h2 className='text-slate-200 text-xl font-bold text-left'>
-                YouTube Playlists
-              </h2>
-              <Table
-                setPdfUrlFunc={SetPdfUrlFunc}
-                setModalOpenFunc={SetModalOpenFunc}
-                // @ts-ignore
-                data={du[course][semester][subject]['YouTube-Links']}
-                isPDF={false}
-              />
-            </div>
+            {
+              // @ts-ignore
+              du[course][semester][subject]['hand-written'] ? (
+                <div className='py-4'>
+                  <h2 className='text-slate-200 text-xl font-bold text-left'>
+                    Notes
+                  </h2>
+                  <Table
+                    setPdfUrlFunc={SetPdfUrlFunc}
+                    setModalOpenFunc={SetModalOpenFunc}
+                    // @ts-ignore
+                    data={du[course][semester][subject]['hand-written']}
+                    isPDF={true}
+                  />
+                </div>
+              ) : null
+            }
+
+            {
+              // @ts-ignore
+              du[course][semester][subject]['books'] ? (
+                <div className='py-4'>
+                  <h2 className='text-slate-200 text-xl font-bold text-left'>
+                    Books
+                  </h2>
+                  <Table
+                    setPdfUrlFunc={SetPdfUrlFunc}
+                    setModalOpenFunc={SetModalOpenFunc}
+                    // @ts-ignore
+                    data={du[course][semester][subject]['books']}
+                    isPDF={false}
+                  />
+                </div>
+              ) : null
+            }
+
+            {
+              // @ts-ignore
+              du[course][semester][subject]['syllabus'] ? (
+                <div className='py-4'>
+                  <h2 className='text-slate-200 text-xl font-bold text-left'>
+                    Syllabus
+                  </h2>
+                  <Table
+                    setPdfUrlFunc={SetPdfUrlFunc}
+                    setModalOpenFunc={SetModalOpenFunc}
+                    // @ts-ignore
+                    data={du[course][semester][subject]['syllabus']}
+                    isPDF={true}
+                  />
+                </div>
+              ) : null
+            }
+
+            {
+              // @ts-ignore
+              du[course][semester][subject].pyqs ? (
+                <div className='py-4'>
+                  <h2 className='text-slate-200 text-xl font-bold text-left'>
+                    PYQs
+                  </h2>
+                  <Table
+                    setPdfUrlFunc={SetPdfUrlFunc}
+                    setModalOpenFunc={SetModalOpenFunc}
+                    // @ts-ignore
+                    data={du[course][semester][subject].pyqs}
+                    isPDF={true}
+                  />
+                </div>
+              ) : null
+            }
+
+            {
+              // @ts-ignore
+              du[course][semester][subject]['yt'] ? (
+                <div className='py-4'>
+                  <h2 className='text-slate-200 text-xl font-bold text-left'>
+                    YouTube Playlists
+                  </h2>
+                  <Table
+                    setPdfUrlFunc={SetPdfUrlFunc}
+                    setModalOpenFunc={SetModalOpenFunc}
+                    // @ts-ignore
+                    data={du[course][semester][subject]['yt']}
+                    isPDF={false}
+                  />
+                </div>
+              ) : null
+            }
           </main>
 
           {modalOpen && (
@@ -223,6 +252,18 @@ const Page = () => {
           )}
         </section>
       ) : null}
+
+      {/* Bottom note */}
+      <section
+        className={`flex flex-col justify-center items-center bg-primary_bg_color px-4 pt-4 pb-16 text-center text-slate-300 relative`}
+      >
+        <div className='w-full rounded p-4 bg-purple-500'>
+          <p className='text-black text-sm'>
+            Website is still under development phase. We are trying our best to
+            improve it and enhance your experience.
+          </p>
+        </div>
+      </section>
     </>
   )
 }
