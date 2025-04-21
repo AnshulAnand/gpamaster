@@ -6,6 +6,7 @@ import axios from 'axios'
 import qs from 'qs'
 import jwt from 'jsonwebtoken'
 import { IUser } from '@/types'
+import dayjs from 'dayjs'
 
 export const GET = async (request: NextRequest) => {
   try {
@@ -74,7 +75,11 @@ export const GET = async (request: NextRequest) => {
       email: user.email as string,
       avatar: user.picture as string,
       username: `${user.email.match(/^([^@]*)@/)[1]}`,
+      paymentStatus: true,
+      lastPaymentDate: dayjs().format('YYYY-MM-DD'),
+      paymentId: 'du-free-plan',
     }
+
     const newUser = await User.create(userObject)
     if (!newUser) {
       return new NextResponse(
