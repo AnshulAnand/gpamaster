@@ -56,7 +56,7 @@ const Page = () => {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className='absolute w-full h-full object-cover'
-            src='/images/Du Banner.jpg'
+            src='/images/banner.png'
             alt='banner'
           />
         </div>

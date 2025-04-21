@@ -171,6 +171,28 @@ export default function Home() {
         </Link>
       </section>
 
+      <section className='flex flex-col justify-center items-center bg-primary_bg_color px-4 py-32 text-center'>
+        <main className='flex flex-col justify-center items-center'>
+          <img
+            className='w-36 md:w-64'
+            src='/images/University_of_Delhi.png'
+            alt='University of delhi'
+          />
+          <h2 className='text-slate-300 text-3xl md:text-5xl mt-6'>
+            University of Delhi
+          </h2>
+          <p className='text-slate-400 mt-4 text-xl'>
+            Resources for University of Delhi are Now LIVE!
+          </p>
+          <Link
+            className='bg-pink-600 text-slate-300 px-4 py-2 text-lg rounded-full mt-8 hover:bg-pink-700 transition'
+            href='/du'
+          >
+            Get resources
+          </Link>
+        </main>
+      </section>
+
       {/* Notes */}
       <section className='flex flex-col justify-center items-center bg-primary_bg_color px-4 py-32 text-center'>
         <span className='bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 mt-2 rounded-full px-4 py-1 shadow-[0px_50px_1000px_200px_rgba(59,_130,_246,_0.15)]'>
