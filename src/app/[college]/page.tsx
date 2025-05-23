@@ -148,7 +148,7 @@ const Page = () => {
 
       {/* Displaying Resources */}
 
-      {showNotes ? (
+      {showNotes && subject ? (
         <section
           className={`flex flex-col justify-center items-center bg-primary_bg_color px-4 pt-4 pb-16 text-center text-slate-300 relative`}
         >

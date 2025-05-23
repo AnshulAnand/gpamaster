@@ -13,7 +13,7 @@ const Table = ({ data, isPDF, setPdfUrlFunc, setModalOpenFunc }: Props) => {
   if (data.length === 0) {
     return (
       <div className='flex justify-center items-center gap-2 text-center font-semibold text-slate-400 bg-secondary_bg_color rounded px-6 py-3 mt-2'>
-        <h1>Comming soon</h1>
+        <h1>Coming soon</h1>
         <FaClockRotateLeft />
       </div>
     )

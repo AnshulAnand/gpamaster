@@ -2841,7 +2841,7 @@ const du = {
   },
   'B.Sc(Hons.) Chemistry': {
     'Semester 2': {
-      'Chemical Thermodynamics & Its Application': {
+      'Thermodynamics and its Applications': {
         books: [
           [
             'lorem ipsum',
@@ -2850,8 +2850,41 @@ const du = {
             'https://eb.du.ac.in/web/book-details/index',
           ],
         ],
-        'hand-written': [],
-        syllabus: [],
+        'hand-written': [
+          [
+            'lorem ipsum',
+            '23 May 2025',
+            'PDF',
+            'Basic-Concepts-of-Chemical-Thermodynamics-lect.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '23 May 2025',
+            'PDF',
+            'First-law-and-thermochemistry-one-shot.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '23 May 2025',
+            'PDF',
+            'Second-Law-of-thermo-sem-2.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '23 May 2025',
+            'PDF',
+            'System-of-variable-composition-one-shot.pdf',
+          ],
+          ['lorem ipsum', '23 May 2025', 'PDF', 'Third-law-one-shot.pdf'],
+        ],
+        syllabus: [
+          [
+            'lorem ipsum',
+            '23 May 2025',
+            'PDF',
+            'Thermodynamics-and-its-_Applications.pdf',
+          ],
+        ],
         pyqs: [
           [
             'lorem ipsum',
@@ -2860,43 +2893,116 @@ const du = {
             'Chemical-Thermodynamics-&-its-App--4151.pdf',
           ],
         ],
-        yt: [],
+        yt: [
+          [
+            'lorem ipsum',
+            '23 May 2025',
+            'You Tube Link',
+            'https://youtube.com/playlist?list=PLzyH6UfZcP1BeHqweIzjf5aGNNbEjq_2c&si=jyr13Yy2Ikzt5gYZ',
+          ],
+        ],
       },
       'Chemistry of S & P block elements': {
         books: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '23 may 2025',
             'LINK',
             'https://eb.du.ac.in/web/book-details/index',
           ],
         ],
-        'hand-written': [],
-        syllabus: [],
+        'hand-written': [
+          [
+            'lorem ipsum',
+            '23 may 2025',
+            'PDF',
+            'Chemistry-of-p-Block-Elements-one-shot.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '23 may 2025',
+            'PDF',
+            'Compounds-of-p-Block-Elements-Sem-2-one-shot.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '23 may 2025',
+            'PDF',
+            'General-Principles-of-Metallurgy-one-shot.pdf',
+          ],
+          ['lorem ipsum', '23 may 2025', 'PDF', 'S-block-sem-2-one-shot.pdf'],
+        ],
+        syllabus: [
+          [
+            'lorem ipsum',
+            '23 May 2025',
+            'PDF',
+            'CHEMISTRY-OF-S--AND-P-BLOCK-_ELEMENTS.pdf',
+          ],
+        ],
         pyqs: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '23 May 2025',
             'PDF',
             'Chemical-Thermodynamics-&-its-App--4151.pdf',
           ],
         ],
-        yt: [],
-      },
-      Haloalkane: {
-        books: [
+        yt: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
-            'LINK',
-            'https://eb.du.ac.in/web/book-details/index',
+            '23 May 2025',
+            'You Tube Link',
+            'https://youtube.com/playlist?list=PLzyH6UfZcP1CclcMUU1p1M4zs2k1qFUng&si=eTWFnTlUyAMoMC54',
           ],
         ],
-        'hand-written': [],
-        syllabus: [],
-        pyqs: [['lorem ipsum', '20 APRIL 2025', 'PDF', 'Haloalkane--4113.pdf']],
-        yt: [],
       },
+      'HALOALKANES, ARENES, HALOARENES, ALCOHOLS, PHENOLS, ETHERS AND EPOXIDES':
+        {
+          books: [
+            [
+              'lorem ipsum',
+              '20 APRIL 2025',
+              'LINK',
+              'https://eb.du.ac.in/web/book-details/index',
+            ],
+          ],
+          'hand-written': [
+            [
+              'lorem ipsum',
+              '23 May 2025',
+              'PDF',
+              'Alcohol-phenol-ether-sem-2-one-shot.pdf',
+            ],
+            ['lorem ipsum', '23 May 2025', 'PDF', 'Aromatic-hydrocarbons.pdf'],
+            [
+              'lorem ipsum',
+              '23 May 2025',
+              'PDF',
+              'Aryl-halides-sem-2-one-shot.pdf',
+            ],
+            ['lorem ipsum', '23 May 2025', 'PDF', 'Haloalkanes.pdf'],
+          ],
+          syllabus: [
+            [
+              'lorem ipsum',
+              '23 May 2025',
+              'PDF',
+              'HALOALKANES-ARENES-HALOARENES-ALCOHOLS-PHENOLS-ETHERS-AND-EPOXIDES.pdf',
+            ],
+          ],
+          pyqs: [
+            ['lorem ipsum', '20 APRIL 2025', 'PDF', 'Haloalkane--4113.pdf'],
+          ],
+          yt: [
+            [
+              'lorem ipsum',
+              '23 May 2025',
+              'PDF',
+              'https://youtube.com/playlist?list=PLzyH6UfZcP1BF8RwpM_M0Fpcws_57m0lt&si=LOWla_7Yr84QdEvx',
+            ],
+          ],
+        },
     },
     'Semester 4': {
       Carbohydrates: {
