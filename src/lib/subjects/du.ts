@@ -3250,38 +3250,38 @@ const du = {
             'https://eb.du.ac.in/web/book-details/index',
           ],
         ],
-        'hand-written': [],
-        syllabus: [],
+        'hand-written': [
+          ['lorem ipsum', '25 May 2025', 'PDF', '1591723504587_Pyrrole.pdf'],
+          ['lorem ipsum', '25 May 2025', 'PDF', 'Furan.pdf'],
+          ['lorem ipsum', '25 May 2025', 'PDF', 'Pyridine.pdf'],
+          ['lorem ipsum', '25 May 2025', 'PDF', 'Thiophene.pdf'],
+          ['lorem ipsum', '25 May 2025', 'PDF', 'amines.pdf'],
+          ['lorem ipsum', '25 May 2025', 'PDF', 'unit-1-che-sem-4.pdf'],
+        ],
+        syllabus: [
+          [
+            'lorem ipsum',
+            '25 May 2025',
+            'PDF',
+            'Chemistry-of-Carboxylic-Acids-and-their-derivatives,-Amined-&-Heterocytes.pdf',
+          ],
+        ],
         pyqs: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '25 May 2025',
             'PDF',
             'Chemistry-of-Carboxylic--4002.pdf',
           ],
         ],
-        yt: [],
-      },
-      'Conductance, Electrochemistry and Chemical Kinetics': {
-        books: [
+        yt: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
-            'LINK',
-            'https://eb.du.ac.in/web/book-details/index',
+            '23 May 2025',
+            'You Tube Link',
+            'https://youtube.com/playlist?list=PLsJdYynP3Vheo4qadXJtURFoEk4u0KzXR&si=BFX2QDEKv5igdMTU',
           ],
         ],
-        'hand-written': [],
-        syllabus: [],
-        pyqs: [
-          [
-            'lorem ipsum',
-            '20 APRIL 2025',
-            'PDF',
-            'Conductance-,-Electrochemistry---4269.pdf',
-          ],
-        ],
-        yt: [],
       },
       'Ecology and Evolution': {
         books: [
@@ -3292,17 +3292,34 @@ const du = {
             'https://eb.du.ac.in/web/book-details/index',
           ],
         ],
-        'hand-written': [],
-        syllabus: [],
+        'hand-written': [
+          ['lorem ipsum', '25 May 2025', 'PDF', 'sem-4-Botany(unit-2).pdf'],
+          ['lorem ipsum', '25 May 2025', 'PDF', 'sem-4-botany(unit-1).pdf'],
+          ['lorem ipsum', '25 May 2025', 'PDF', 'sem-4-botany(unit-6).pdf'],
+          ['lorem ipsum', '25 May 2025', 'PDF', 'sem-4-botany-(unit-3).pdf'],
+          ['lorem ipsum', '25 May 2025', 'PDF', 'sem-4-botany-(unit-4).pdf'],
+          ['lorem ipsum', '25 May 2025', 'PDF', 'sem-4-botany-(unit-5).pdf'],
+          ['lorem ipsum', '25 May 2025', 'PDF', 'sem-4-botany-(unit-7).pdf'],
+        ],
+        syllabus: [
+          ['lorem ipsum', '25 May 2025', 'PDF', 'Ecology-and-Evolution.pdf'],
+        ],
         pyqs: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '25 May 2025',
             'PDF',
             'Ecology-&-Evolution--2162512401.pdf',
           ],
         ],
-        yt: [],
+        yt: [
+          [
+            'lorem ipsum',
+            '23 May 2025',
+            'You Tube Link',
+            'https://youtube.com/playlist?list=PLsJdYynP3VheDKAsbIR-Zj57w0NoUKBLk&si=-5iLCs0PxYKqPb7R',
+          ],
+        ],
       },
       'Fundamentals of Human Physiology': {
         books: [
@@ -3313,17 +3330,38 @@ const du = {
             'https://eb.du.ac.in/web/book-details/index',
           ],
         ],
-        'hand-written': [],
-        syllabus: [],
+        'hand-written': [
+          ['lorem ipsum', '25 May 2025', 'PDF', 'sem-4-zoology-unit-1.pdf'],
+          ['lorem ipsum', '25 May 2025', 'PDF', 'sem-4-zoology-unit-2.pdf'],
+          ['lorem ipsum', '25 May 2025', 'PDF', 'sem-4-zoology-unit-3-.pdf'],
+          ['lorem ipsum', '25 May 2025', 'PDF', 'sem-4-zoology-unit-4.pdf'],
+          ['lorem ipsum', '25 May 2025', 'PDF', 'sem-4-zoology-unit-5.pdf'],
+          ['lorem ipsum', '25 May 2025', 'PDF', 'sem-4-zoology-unit-6.pdf'],
+        ],
+        syllabus: [
+          [
+            'lorem ipsum',
+            '25 May 2025',
+            'PDF',
+            'Fundamentals-of-Human-Physiology.pdf',
+          ],
+        ],
         pyqs: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '25 May 2025',
             'PDF',
             'Fundamentals-of-Human-Physiology---4023.pdf',
           ],
         ],
-        yt: [],
+        yt: [
+          [
+            'lorem ipsum',
+            '23 May 2025',
+            'You Tube Link',
+            'https://youtube.com/playlist?list=PLsJdYynP3Vhd_d5aZaf28yPeMiRuBxjoi&si=7VK3LtrF_lrlq9lp',
+          ],
+        ],
       },
     },
     'Semester 6': {
