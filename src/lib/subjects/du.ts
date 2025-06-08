@@ -1,68 +1,172 @@
 const du = {
   'B.A(Hons.) Economics': {
     'Semester 2': {
-      'B.A._H_Economics_ second semester': {
+      'INTERMEDIATE STATISTICS FOR ECONOMICS': {
         books: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '06 June 2025',
             'LINK',
             'https://eb.du.ac.in/web/book-details/index',
           ],
         ],
         'hand-written': [],
-        syllabus: [],
+        syllabus: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'INTERMEDIATE-STATISTICS-FOR_ECONOMICS.pdf',
+          ],
+        ],
         pyqs: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '06 June 2025',
             'PDF',
             'B.A._H_Economics_-second-semester.pdf',
           ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Statistics-2-Economics-PYQ-2024-@DU_Colleges-.pdf',
+          ],
         ],
-        yt: [],
+        yt: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK1',
+            'https://youtube.com/playlist?list=PLXyvrzNSt5ejhU_rSbxT7TcEAfjDWmy4E&si=3OQ566lzOtGP9shK',
+          ],
+        ],
       },
-      'Intermediate Mathematical Methods   5190': {
+      'INTERMEDIATE MATHEMATICAL METHODS FOR ECONOMICS': {
         books: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '06 June 2025',
             'LINK',
             'https://eb.du.ac.in/web/book-details/index',
           ],
         ],
-        'hand-written': [],
-        syllabus: [],
+        'hand-written': [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'BAH_Economics,_Sem_II,_Mathematical_methods_of_economics_II,_Week4.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Intermediate-Mathematical-Methods-for-Economics.pdf',
+          ],
+        ],
+        syllabus: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'INTERMEDIATE-MATHEMATICAL-_METHODS-FOR-ECONOMICS.pdf',
+          ],
+        ],
         pyqs: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '06 June 2025',
+            'PDF',
+            'I-MME-2-BA-Economics-PYQ-2023-@DU_Colleges-.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
             'PDF',
             'Intermediate-Mathematical-Methods---5190.pdf',
           ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'MME-2-BA-Economics-2023-PYQ-2-@DU_Colleges-.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'MME-2-BA-Economics-2024-PYQ-2-@DU_Colleges-.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'MME-2-BA-Economics-2024-PYQ-3-@DU_Colleges-.pdf',
+          ],
         ],
-        yt: [],
+        yt: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK1',
+            'https://youtube.com/playlist?list=PLXyvrzNSt5ejhU_rSbxT7TcEAfjDWmy4E&si=3OQ566lzOtGP9shK',
+          ],
+        ],
       },
       'Introductory Macroeconomics   5137': {
         books: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '06 June 2025',
             'LINK',
             'https://eb.du.ac.in/web/book-details/index',
           ],
         ],
-        'hand-written': [],
-        syllabus: [],
+        'hand-written': [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Macroeconomics-SOL-BA-Prog-Eco-@DU_Colleges--(1).pdf',
+          ],
+        ],
+        syllabus: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'INTRODUCTORY-MACROECONOMICS.pdf',
+          ],
+        ],
         pyqs: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '06 June 2025',
+            'PDF',
+            'I-Macroeconomics-Sem-2-2024-PYQ-2-@DU_Colleges.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'I-Macroeconomics-Sem-2-PYQ-2023-@DU_Colleges-.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
             'PDF',
             'Introductory-Macroeconomics---5137.pdf',
           ],
         ],
-        yt: [],
+        yt: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK1',
+            'https://youtube.com/playlist?list=PLXyvrzNSt5ejhU_rSbxT7TcEAfjDWmy4E&si=3OQ566lzOtGP9shK',
+          ],
+        ],
       },
     },
     'Semester 4': {
@@ -535,64 +639,106 @@ const du = {
         books: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '06 June 2025',
             'LINK',
             'https://eb.du.ac.in/web/book-details/index',
           ],
         ],
         'hand-written': [],
-        syllabus: [],
+        syllabus: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'History-of-India-–-II_-c.4th-century-BCE-to-750-CE.pdf',
+          ],
+        ],
         pyqs: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '06 June 2025',
             'PDF',
             'History-of-India--300-750---5145.pdf',
           ],
         ],
-        yt: [],
+        yt: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK1',
+            'https://youtube.com/playlist?list=PLBLQXAaRIko3xppaf7gIW2Q8Xs1VM7sGl&si=oRlIi8AkTjwIj_eT',
+          ],
+        ],
       },
       'History of the USA   5245': {
         books: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '06 June 2025',
             'LINK',
             'https://eb.du.ac.in/web/book-details/index',
           ],
         ],
         'hand-written': [],
-        syllabus: [],
+        syllabus: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'History-of-the-USA_-Reconstruction--to-New-Age-Politics.pdf',
+          ],
+        ],
         pyqs: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '06 June 2025',
             'PDF',
             'History-of-the-USA---5245.pdf',
           ],
         ],
-        yt: [],
+        yt: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK1',
+            'https://youtube.com/playlist?list=PLvPHE_IA4sLnCmsC_gVDexmfIBn8TbWqY&si=vZzcDsqbnrz2ubrv',
+          ],
+        ],
       },
       'Social Formations   5195': {
         books: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '06 June 2025',
             'LINK',
             'https://eb.du.ac.in/web/book-details/index',
           ],
         ],
         'hand-written': [],
-        syllabus: [],
+        syllabus: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Social-Formations-and-Cultural--Patterns-of-the-Medieval-World-–-II.pdf',
+          ],
+        ],
         pyqs: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '06 June 2025',
             'PDF',
             'Social-Formations---5195.pdf',
           ],
         ],
-        yt: [],
+        yt: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK1',
+            'https://youtube.com/playlist?list=PLvPHE_IA4sLkkbXG_bikXha6rdV00nQSz&si=Zb2-JJrIzWfUM9Z8',
+          ],
+        ],
       },
     },
     'Semester 4': {
@@ -663,26 +809,155 @@ const du = {
   },
   'B.A(Hons.) Political Science': {
     'Semester 2': {
+      'Introduction to International Relations_ Theories, Concepts and Debates':
+        {
+          books: [
+            [
+              'lorem ipsum',
+              '06 June 2025',
+              'LINK',
+              'https://eb.du.ac.in/web/book-details/index',
+            ],
+          ],
+          'hand-written': [
+            [
+              'lorem ipsum',
+              '06 June 2025',
+              'PDF',
+              'Introduction-to-International-Relations.pdf',
+            ],
+          ],
+          syllabus: [
+            [
+              'lorem ipsum',
+              '06 June 2025',
+              'PDF',
+              'Introduction-to-International-Relations_-Theories,-Concepts-and-Debates.pdf',
+            ],
+          ],
+          pyqs: [
+            ['lorem ipsum', '06 June 2025', 'PDF', 'pyq2.0.pdf'],
+            ['lorem ipsum', '06 June 2025', 'PDF', 'pyq2.1.pdf'],
+          ],
+          yt: [
+            [
+              'lorem ipsum',
+              '06 June 2025',
+              'LINK1',
+              'https://www.youtube.com/watch?v=wtwDUr-AYzo',
+            ],
+            [
+              'lorem ipsum',
+              '06 June 2025',
+              'LINK2',
+              'https://youtube.com/playlist?list=PLk6pKT7lDoJidJNKmWrY2YdcbXu3h2Re7&si=45PlotQTxN4lxZiS',
+            ],
+          ],
+        },
       'Methods & Approaches    5200': {
-        books: [
+        books: [['lorem ipsum', '06 June 2025', 'LINK', '']],
+        'hand-written': [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
-            'LINK',
-            'https://eb.du.ac.in/web/book-details/index',
+            '06 June 2025',
+            'PDF',
+            'Introduction-to-International-Relations.pdf',
           ],
         ],
-        'hand-written': [],
         syllabus: [],
         pyqs: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '06 June 2025',
             'PDF',
             'Methods-&-Approaches----5200.pdf',
           ],
         ],
-        yt: [],
+        yt: [['lorem ipsum', '06 June 2025', 'LINK', '']],
+      },
+      'Methods and Approaches in Comparative Political Analysis': {
+        books: [['lorem ipsum', '06 June 2025', 'LINK', '']],
+        'hand-written': [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Methods-and-Approaches-in-Comparative-Pol.-Analysis.pdf',
+          ],
+        ],
+        syllabus: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Methods-and-Approaches-in-Comparative-Political-Analysis.pdf',
+          ],
+        ],
+        pyqs: [
+          ['lorem ipsum', '06 June 2025', 'PDF', 'PYQ1.0.pdf'],
+          ['lorem ipsum', '06 June 2025', 'PDF', 'PYQ1.pdf'],
+        ],
+        yt: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK',
+            'https://www.youtube.com/watch?v=V7A6I5O9UhE',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK',
+            'https://youtube.com/playlist?list=PLk6pKT7lDoJh969GMUNmhempCORtM9uKt&si=xq-SjHMRnGsinYa0',
+          ],
+        ],
+      },
+      'Perspectives on Public Administration': {
+        books: [['lorem ipsum', '06 June 2025', 'LINK', '']],
+        'hand-written': [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Perspectives-on-Public-Administration.pdf',
+          ],
+        ],
+        syllabus: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Perspectives-on-Public-Administration.pdf',
+          ],
+        ],
+        pyqs: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Perspectives-on-Public-Administration-2.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Perspectives-on-Public-Administration.pdf',
+          ],
+        ],
+        yt: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK',
+            'https://youtu.be/XBgBJjS1j78?si=nRgAUQw8ANeedBQb',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK',
+            'https://youtube.com/playlist?list=PLk6pKT7lDoJjsmSRWsbwYjRrsf_zKlHlh&si=nRmHBpdSyWM3CSfv',
+          ],
+        ],
       },
     },
     'Semester 4': {
@@ -2181,64 +2456,174 @@ const du = {
         books: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
-            'LINK',
-            'https://eb.du.ac.in/web/book-details/index',
+            '06 June 2025',
+            'PDF',
+            'Company-Law-B-Com-SOL-Notes-@DU_Colleges-.pdf',
           ],
         ],
-        'hand-written': [],
-        syllabus: [],
+        'hand-written': [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Company-Law-Unit-1-Introduction-Notes-by-TAS-Updates.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Company-Law-Unit-2-by-TAS-Updates-.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Company-Law-Unit-4-Notes-by-TAS-Updates.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Company-Law-Unit-5-Notes-by-TAS-Updates.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Company-Law-by-TAS-Updates.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Company-law-Unit-3-notes-by-TAS-Updates.pdf',
+          ],
+        ],
+        syllabus: [['lorem ipsum', '06 June 2025', 'PDF', 'Company-Law.pdf']],
         pyqs: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '06 June 2025',
             'PDF',
             'B.Com._H_Company_Law_Semester_2nd.pdf',
           ],
         ],
-        yt: [],
-      },
-      'Corporate Accounting': {
-        books: [
+        yt: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
-            'LINK',
-            'https://eb.du.ac.in/web/book-details/index',
+            '06 June 2025',
+            'LINK1',
+            'https://youtube.com/watch?v=k-Wcw-ayQwA&si=N2J-Vcry75N05dzp',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK2',
+            'https://youtube.com/playlist?list=PL9Cd7H8NFRQwuQyl13kD-BOLxYqVdcDlx&si=10cZxr8aA7pY4DZ_',
           ],
         ],
-        'hand-written': [],
-        syllabus: [],
+      },
+      'Corporate Accounting': {
+        books: [['lorem ipsum', '06 June 2025', 'PDF', 'DSC-4--Unit1-5.pdf']],
+        'hand-written': [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Corporate-Accounting-(THEORY-NOTES)-by-TAS-Updates.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Corporate-Accounting-Important-questions-by-TAS-Updates.pdf',
+          ],
+        ],
+        syllabus: [
+          ['lorem ipsum', '06 June 2025', 'PDF', 'Corporate-Accounting.pdf'],
+        ],
         pyqs: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '06 June 2025',
             'PDF',
             'Corporate-Accounting--3861.pdf',
           ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Corporate-Accounting-2023-PYQ-@DU_Colleges-.pdf',
+          ],
         ],
-        yt: [],
+        yt: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK1',
+            'https://youtube.com/watch?v=vSQmthYqiF8&si=nDjUerEFMNSebsXB',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK2',
+            'https://youtube.com/playlist?list=PL9Cd7H8NFRQzs_FVp-9HvFeWc_Elns2RN&si=3WzXdCz2YQOpdz9D',
+          ],
+        ],
       },
       'HR Management': {
         books: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
-            'LINK',
-            'https://eb.du.ac.in/web/book-details/index',
+            '06 June 2025',
+            'PDF',
+            'HRM-SOL-Book-DSC-6-B-Com-Hons-@DU_Colleges-.pdf',
           ],
         ],
-        'hand-written': [],
-        syllabus: [],
+        'hand-written': [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'HRM-Human-Resource-Management-by-studocu-.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'HRM-Revision-Notes-Bcom-Unit-1-to-5-by-TAS-Updates.pdf',
+          ],
+        ],
+        syllabus: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Human-Resource-Management.pdf',
+          ],
+        ],
         pyqs: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '06 June 2025',
             'PDF',
             'Human-Resource-Management--3866.pdf',
           ],
         ],
-        yt: [],
+        yt: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK1',
+            'https://youtube.com/watch?v=meFFVpjWXuE&si=txYgahzrM1cz9mlo',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK2',
+            'https://youtube.com/playlist?list=PL9Cd7H8NFRQyHThG3ol8UEt4UD8Gyclo-&si=lqlTXep9mhAXa9j2',
+          ],
+        ],
       },
     },
     'Semester 4': {
@@ -2387,38 +2772,182 @@ const du = {
         books: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
-            'LINK',
-            'https://eb.du.ac.in/web/book-details/index',
+            '06 June 2025',
+            'PDF',
+            'Company Law B Com SOL Notes @DU_Colleges .pdf',
           ],
         ],
-        'hand-written': [],
-        syllabus: [],
-        pyqs: [
-          ['lorem ipsum', '20 APRIL 2025', 'PDF', 'Company-Law---3844.pdf'],
+        'hand-written': [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Company-Law-Unit-1-Introduction-Notes-by-TAS-Updates.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Company-Law-Unit-2-by-TAS-Updates-.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Company-Law-Unit-4-Notes-by-TAS-Updates.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Company-Law-Unit-5-Notes-by-TAS-Updates.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Company-Law-by-TAS-Updates.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Company-law-Unit-3-notes-by-TAS-Updates.pdf',
+          ],
         ],
-        yt: [],
+        syllabus: [['lorem ipsum', '06 June 2025', 'PDF', 'Company-Law.pdf']],
+        pyqs: [
+          ['lorem ipsum', '06 June 2025', 'PDF', 'B.Com._P_Company_Law.pdf'],
+          ['lorem ipsum', '06 June 2025', 'PDF', 'Company-Law---3844.pdf'],
+        ],
+        yt: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK1',
+            'https://youtube.com/watch?v=k-Wcw-ayQwA&si=N2J-Vcry75N05dzp',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK2',
+            'https://youtube.com/playlist?list=PL9Cd7H8NFRQwuQyl13kD-BOLxYqVdcDlx&si=10cZxr8aA7pY4DZ_',
+          ],
+        ],
       },
-      'HR Management': {
+      'Corporate Accounting': {
+        books: [['lorem ipsum', '06 June 2025', 'PDF', 'DSC 4- Unit1-5.pdf']],
+        'hand-written': [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Corporate-Accounting-(THEORY-NOTES)-by-TAS-Updates.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Corporate-Accounting-Important-questions-by-TAS-Updates.pdf',
+          ],
+        ],
+        syllabus: [
+          ['lorem ipsum', '06 June 2025', 'PDF', 'Corporate-Accounting.pdf'],
+        ],
+        pyqs: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Corporate-Accounting-BCOM-PYQ-23-.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Corporate-Accounting-BCOM-PYQ-24--.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Corporate-Accounting-BCOM-PYQ.pdf',
+          ],
+        ],
+        yt: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK',
+            'https://youtube.com/watch?v=vSQmthYqiF8&si=nDjUerEFMNSebsXB',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK',
+            'https://youtube.com/playlist?list=PL9Cd7H8NFRQzs_FVp-9HvFeWc_Elns2RN&si=3WzXdCz2YQOpdz9D',
+          ],
+        ],
+      },
+      'Human Resource Management': {
         books: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
-            'LINK',
-            'https://eb.du.ac.in/web/book-details/index',
+            '06 June 2025',
+            'PDF',
+            'HRM SOL Book DSC 6 B Com Hons @DU_Colleges .pdf',
           ],
         ],
-        'hand-written': [],
-        syllabus: [],
+        'hand-written': [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'HRM-Human-Resource-Management-by-studocu-.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'HRM-Revision-Notes-Bcom-Unit-1-to-5-by-TAS-Updates.pdf',
+          ],
+        ],
+        syllabus: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Human-Resource-Management.pdf',
+          ],
+        ],
         pyqs: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '06 June 2025',
+            'PDF',
+            'B._Com._P_Human_Resource_Management.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
             'PDF',
             'Human-Resource-Management--3846.pdf',
           ],
         ],
-        yt: [],
+        yt: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK1',
+            'https://youtube.com/watch?v=meFFVpjWXuE&si=txYgahzrM1cz9mlo',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK2',
+            'https://youtube.com/playlist?list=PL9Cd7H8NFRQyHThG3ol8UEt4UD8Gyclo-&si=lqlTXep9mhAXa9j2',
+          ],
+        ],
       },
     },
     'Semester 4': {
@@ -4138,79 +4667,223 @@ const du = {
   },
   'B.Sc(Hons.) Zoology': {
     'Semester 2': {
-      'Fundamental Biomolecules': {
+      'Fundamental of Biomolecules': {
         books: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '07 June 2025',
             'LINK',
             'https://eb.du.ac.in/web/book-details/index',
           ],
         ],
-        'hand-written': [],
-        syllabus: [],
+        'hand-written': [
+          ['lorem ipsum', '07 June 2025', 'PDF', 'BIOCHEMISTRY.pdf'],
+          ['lorem ipsum', '07 June 2025', 'PDF', 'CARBOHYDRATES.pdf'],
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'PDF',
+            'Enzymes_ppt[1]-[Read-Only].pdf',
+          ],
+          ['lorem ipsum', '07 June 2025', 'PDF', 'Lipids.pdf'],
+        ],
+        syllabus: [
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'PDF',
+            'Fundamentals-of-Biomolecules.pdf',
+          ],
+        ],
         pyqs: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '07 June 2025',
             'PDF',
             'Fundamentals-of-Biomolecules---4126.pdf',
           ],
+          ['lorem ipsum', '07 June 2025', 'PDF', 'PYQ-2023.pdf'],
         ],
-        yt: [],
+        yt: [
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'LINK',
+            'https://youtube.com/playlist?list=PLyvXYqABoA5V7eHhqWCmx0fhAaxezh9GV&si=4hsHocS6ia_TH3jP',
+          ],
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'LINK',
+            'https://youtube.com/playlist?list=PLyvXYqABoA5WDyueinLtBabRL21qnY1hu&si=ZK1GeHHWZpcSj4cn',
+          ],
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'LINK',
+            'https://youtube.com/playlist?list=PLyvXYqABoA5WgQfbC4McR0L5vDnh7yoX0&si=3Uawd2-Ufn7fsbIn',
+          ],
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'LINK',
+            'https://youtube.com/playlist?list=PLyvXYqABoA5Wq32sKKXjUI9ta5ScDMsQu&si=0ioQtclrc5YtdMUh',
+          ],
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'LINK',
+            'https://youtube.com/playlist?list=PLyvXYqABoA5UbxutGhBlMoiQByqo6EUot&si=1UxNg939souvjvAf',
+          ],
+        ],
       },
-      'Human Physiology': {
+      'Human Physiology Control and Coordination Systems': {
         books: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '07 June 2025',
             'LINK',
             'https://eb.du.ac.in/web/book-details/index',
           ],
         ],
-        'hand-written': [],
-        syllabus: [],
-        pyqs: [
-          ['lorem ipsum', '20 APRIL 2025', 'PDF', 'Human-Physiology--4164.pdf'],
-        ],
-        yt: [],
-      },
-      'Lifestyle Disorders': {
-        books: [
+        'hand-written': [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
-            'LINK',
-            'https://eb.du.ac.in/web/book-details/index',
-          ],
-        ],
-        'hand-written': [],
-        syllabus: [],
-        pyqs: [
-          [
-            'lorem ipsum',
-            '20 APRIL 2025',
+            '07 June 2025',
             'PDF',
-            'Lifestyle-Disorders---6096.pdf',
+            'Notes-Credits--Harshita-Jha.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'PDF',
+            'Notes-Credits--Sushmita-Bhardwaj.pdf',
           ],
         ],
-        yt: [],
+        syllabus: [
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'PDF',
+            'Human-Physiology-Control-and-_Coordination-Systems.pdf',
+          ],
+        ],
+        pyqs: [
+          ['lorem ipsum', '07 June 2025', 'PDF', 'Human-Physiology--4164.pdf'],
+          ['lorem ipsum', '07 June 2025', 'PDF', 'pyq.pdf'],
+        ],
+        yt: [
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'LINK',
+            'https://drive.google.com/drive/folders/159rle5SDt1lkDSDaSNy_pioLWPJBD9Jo?usp=drive_link',
+          ],
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'LINK',
+            'https://drive.google.com/drive/folders/1576sybpcbPs5ftDqHBMU1G6dKE-ZXYu-?usp=drive_link',
+          ],
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'LINK',
+            'https://drive.google.com/drive/folders/11tYA7EgmJCHeyBMzfNez7phdsaU71t-P?usp=drive_link',
+          ],
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'LINK',
+            'https://drive.google.com/file/d/12flyLnpwqaAmaDCLulQUCuQJn7d_Pjq_/view?usp=drive_link',
+          ],
+        ],
       },
-      'Non Chordata': {
+      'Non Chordata Coelomates': {
         books: [
           [
             'lorem ipsum',
-            '20 APRIL 2025',
+            '07 June 2025',
             'LINK',
             'https://eb.du.ac.in/web/book-details/index',
           ],
         ],
-        'hand-written': [],
-        syllabus: [],
-        pyqs: [
-          ['lorem ipsum', '20 APRIL 2025', 'PDF', 'DSC-Non-Chordata--4088.pdf'],
+        'hand-written': [
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'PDF',
+            'Notes-Credits--Sushmita-Bhardwaj.pdf',
+          ],
         ],
-        yt: [],
+        syllabus: [
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'PDF',
+            'Non-Chordata_-Coelomates.pdf',
+          ],
+        ],
+        pyqs: [
+          ['lorem ipsum', '07 June 2025', 'PDF', 'DSC-Non-Chordata--4088.pdf'],
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'PDF',
+            'DSC-Non-Chordata--II--2920.pdf',
+          ],
+          ['lorem ipsum', '07 June 2025', 'PDF', 'SplitPDFFile_1_to_3.pdf'],
+        ],
+        yt: [
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'LINK',
+            'https://youtu.be/NNS23kYm8to?si=2JYkQu8KhuzJGGq8',
+          ],
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'LINK',
+            'https://youtu.be/tVjfcelguHY?si=YI6NdTVaUnCUxV76',
+          ],
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'LINK',
+            'https://youtu.be/rfjwpPAoUX0?si=rpCSoQ4FlufADHeM',
+          ],
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'LINK',
+            'https://youtu.be/PSlmAiYsYFI?si=wiQpzj0f0b3oTZZC',
+          ],
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'LINK',
+            'https://youtu.be/OkgpDLU22Gs?si=0md0QQ4cf_5FJc2j',
+          ],
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'LINK',
+            'https://youtu.be/MoLsK7dmPqU?si=xhGEseD1cpMzvVkl',
+          ],
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'LINK',
+            'https://youtu.be/XzoS_kfaZDw?si=B10IL4WjAEmljxVe',
+          ],
+          [
+            'lorem ipsum',
+            '07 June 2025',
+            'LINK',
+            'https://youtu.be/LkPQc0641Zk?si=cjSvXioAxcJhv4f1',
+          ],
+        ],
       },
     },
     'Semester 4': {
@@ -4331,6 +5004,172 @@ const du = {
           ],
         ],
         yt: [],
+      },
+    },
+  },
+  AEC: {
+    'Semester 2': {
+      EVS: {
+        books: [
+          ['lorem ipsum', '06 June 2025', 'PDF', 'EVS-DU-Verified--.pdf'],
+        ],
+        'hand-written': [
+          ['lorem ipsum', '06 June 2025', 'PDF', 'Credits--Heena-Classes.pdf'],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'DU-EVS-AEC-Semester-1_2-Notes-@DU_Colleges.pdf',
+          ],
+        ],
+        syllabus: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'NEP-syllabus-AEC-Environmental-Science.pdf',
+          ],
+        ],
+        pyqs: [
+          ['lorem ipsum', '06 June 2025', 'PDF', 'EVS--I.pdf'],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'EVS--Theory-into-Practice-(1).pdf',
+          ],
+          ['lorem ipsum', '06 June 2025', 'PDF', 'EVS-4467---II.pdf'],
+        ],
+        yt: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK3',
+            'https://youtube.com/playlist?list=PLBLQXAaRIko1IJj65_TLKvn9ZrMV6tpiS&si=0m2mo0TazLDeUyr3',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK2',
+            'https://www.youtube.com/live/nuswRRVlyAw?si=P51MrZmXF3LuR4Cs',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK3',
+            'https://youtu.be/lyuSJRWsr7Q?si=uggp8oBb6ohqrueq',
+          ],
+        ],
+      },
+      'Hindi A': {
+        books: [
+          ['lorem ipsum', '06 June 2025', 'PDF', 'sol-AEC-HINDI---A.pdf'],
+        ],
+        'hand-written': [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Hindi-bhasha-aur-sampreson-unit-1-chapter-1.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Hindi-bhasha-aur-sampreson-unit-1-chapter-2.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Hindi-bhasha-aur-sampreson-unit-2-chapter-1.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Hindi-bhasha-aur-sampreson-unit-2-chapter-2-p.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Hindi-bhasha-aur-sampreson-unit-2-chapter-3.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Hindi-bhasha-aur-sampreson-unit-2-chapter-4.pdf',
+          ],
+        ],
+        syllabus: [['lorem ipsum', '06 June 2025', 'PDF', 'Hinidi-A.pdf']],
+        pyqs: [
+          ['lorem ipsum', '06 June 2025', 'PDF', 'Hindi-A--4469.pdf'],
+          ['lorem ipsum', '06 June 2025', 'PDF', 'Hindi-Bhasha-4453.pdf'],
+        ],
+        yt: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK',
+            'https://youtube.com/playlist?list=PL9V8gXMR4kEmnB4oRYzXb7oJowK6_iZ91&si=0mKvRx0sahhrhGgQ',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK',
+            'https://www.youtube.com/live/fK-mTa0Q7o0?si=BDsWRdD0RLn5BXvB',
+          ],
+        ],
+      },
+      'Hindi B': {
+        books: [['lorem ipsum', '06 June 2025', 'PDF', 'hindi-bb.pdf']],
+        'hand-written': [
+          ['lorem ipsum', '06 June 2025', 'PDF', 'Credit--Iqura-memom.pdf'],
+          ['lorem ipsum', '06 June 2025', 'PDF', 'Hindi-Notes-B-notes-1.pdf'],
+          ['lorem ipsum', '06 June 2025', 'PDF', 'hindi-B-.pdf'],
+          ['lorem ipsum', '06 June 2025', 'PDF', 'hindi-Du-Colleges-.pdf'],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'कार्यालयी_पत्र_लेखन_Du_colleges_.pdf',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'कार्यालयी_हिन्दी_का_स्वरूप_@Du_College_.pdf',
+          ],
+          ['lorem ipsum', '06 June 2025', 'PDF', 'टिप्पण-,-प्रारुपण-.pdf'],
+          ['lorem ipsum', '06 June 2025', 'PDF', 'विज्ञापन-लेखन.pdf'],
+          ['lorem ipsum', '06 June 2025', 'PDF', 'स्ववृत-लेखन.DU-college-.pdf'],
+        ],
+        syllabus: [['lorem ipsum', '06 June 2025', 'PDF', 'Hindi-B.pdf']],
+        pyqs: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'PDF',
+            'Hindi-Aupcharik-Lekhan--4454.pdf',
+          ],
+          ['lorem ipsum', '06 June 2025', 'PDF', 'Hindi-B--4470.pdf'],
+        ],
+        yt: [
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK',
+            'https://youtube.com/playlist?list=PLk6pKT7lDoJjlxz8x3aOqM5rGSl6Qluoo&si=qSp4nm7csvzSw4RN',
+          ],
+          [
+            'lorem ipsum',
+            '06 June 2025',
+            'LINK',
+            'https://youtube.com/playlist?list=PL9V8gXMR4kEm0DkbikO2IML7mB2_7GuKu&si=fue5nPMbbzkZLiDh',
+          ],
+        ],
       },
     },
   },
