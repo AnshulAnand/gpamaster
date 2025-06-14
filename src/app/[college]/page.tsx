@@ -186,7 +186,12 @@ const Page = () => {
                     setModalOpenFunc={SetModalOpenFunc}
                     // @ts-ignore
                     data={du[course][semester][subject]['books']}
-                    isPDF={false}
+                    isPDF={
+                      // @ts-ignore
+                      du[course][semester][subject]['books'][0][2] === 'PDF'
+                        ? true
+                        : false
+                    }
                   />
                 </div>
               ) : null

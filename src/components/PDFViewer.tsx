@@ -31,7 +31,7 @@ const PDFViewer = ({ pdfUrl, setModalOpenFunc }: Props) => {
   console.log({ date1, dateDiff })
 
   if (!currentUser.paymentStatus) redirect('/pricing')
-  if (dateDiff > 120) redirect('/pricing')
+  if (dateDiff > 365) redirect('/pricing')
 
   const onDocumentLoadSuccess = ({ numPages }: { numPages: number }) => {
     setNumPages(numPages)

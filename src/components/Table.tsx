@@ -18,6 +18,7 @@ const Table = ({ data, isPDF, setPdfUrlFunc, setModalOpenFunc }: Props) => {
       </div>
     )
   }
+
   return (
     <div className='relative overflow-x-auto shadow-md rounded mt-2'>
       <table className='w-full text-sm text-left rtl:text-right text-gray-400'>
