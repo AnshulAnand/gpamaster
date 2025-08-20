@@ -232,6 +232,23 @@ const Page = () => {
                 </div>
               ) : null
             }
+            {
+              // @ts-ignore
+              du[course][semester][subject]['mind-maps'] ? (
+                <div className='py-4'>
+                  <h2 className='text-slate-200 text-xl font-bold text-left'>
+                    Mind-maps
+                  </h2>
+                  <Table
+                    setPdfUrlFunc={SetPdfUrlFunc}
+                    setModalOpenFunc={SetModalOpenFunc}
+                    // @ts-ignore
+                    data={du[course][semester][subject]['mind-maps']}
+                    isPDF={true}
+                  />
+                </div>
+              ) : null
+            }
 
             {
               // @ts-ignore
@@ -260,9 +277,9 @@ const Page = () => {
 
       {/* Bottom note */}
       <section
-        className={`flex flex-col justify-center items-center bg-primary_bg_color px-4 pt-4 pb-16 text-center text-slate-300 relative`}
+        className={`flex flex-col justify-center items-center bg-primary_bg_color text-center text-slate-300 relative`}
       >
-        <div className='w-full rounded p-4 bg-purple-500'>
+        <div className='w-full p-6 bg-purple-500'>
           <p className='text-black text-sm'>
             Website is still under development phase. We are trying our best to
             improve it and enhance your experience.

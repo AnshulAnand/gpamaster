@@ -35,7 +35,7 @@ const NavBar = () => {
               <Link href='/discuss'>Discuss</Link>
             </li>
             <li className={`${pathname === '/notes' ? 'text-slate-100' : ''}`}>
-              <Link href='/notes'>Notes</Link>
+              <Link href='/resources'>Notes</Link>
             </li>
             <li className={`${pathname === '/blog' ? 'text-slate-100' : ''}`}>
               <Link href='/blog'>Blog</Link>
@@ -73,7 +73,7 @@ const NavBar = () => {
               <Link href='/discuss'>Discuss</Link>
             </li>
             <li className={`${pathname === '/notes' ? 'text-slate-100' : ''}`}>
-              <Link href='/notes'>Notes</Link>
+              <Link href='/resources'>Notes</Link>
             </li>
             <li className={`${pathname === '/blog' ? 'text-slate-100' : ''}`}>
               <Link href='/blog'>Blog</Link>

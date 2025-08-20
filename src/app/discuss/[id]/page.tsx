@@ -12,7 +12,9 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
   return (
     <section className='flex flex-col justify-center items-center bg-primary_bg_color px-4 pt-6 pb-32 mt-[64px] text-center text-slate-300 relative'>
       <main className='grid md:grid-cols-3 gap-4 max-w-7xl w-full'>
-        <div className='md:hidden bg-secondary_bg_color h-[200px] mt-4 rounded'></div>
+        <div className='grid place-content-center md:hidden bg-secondary_bg_color h-[200px] mt-4 rounded'>
+          gpamaster.in
+        </div>
         <div className='md:col-span-2'>
           {/* post */}
           <div className='text-left bg-secondary_bg_color p-4 rounded'>
@@ -50,8 +52,12 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
 
         <div className=''>
           <div className='bg-secondary_bg_color rounded'>
-            <div className='h-52 md:h-80 p-2'></div>
-            <div className='h-52 md:h-80 p-2'></div>
+            <div className='grid place-content-center h-52 md:h-80 p-2'>
+              gpamaster.in
+            </div>
+            <div className='grid place-content-center h-52 md:h-80 p-2'>
+              gpamaster.in
+            </div>
           </div>
         </div>
       </main>

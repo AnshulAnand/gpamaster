@@ -8,7 +8,7 @@ runtime_config:
 resources:
   cpu: 1
   memory_gb: 1
-  disk_size_gb: 20
+  disk_size_gb: 50
 
 readiness_check:
   path: '/'

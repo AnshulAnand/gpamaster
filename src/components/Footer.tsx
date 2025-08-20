@@ -16,7 +16,8 @@ const Footer = () => {
           </p>
           <div className='flex gap-2 mt-4'>
             <a
-              href='https://www.instagram.com/gpamaster.in/'
+              // href='https://www.instagram.com/gpamaster.in/'
+              href='https://www.instagram.com/gpamasterdu/'
               className='text-slate-400 text-xl'
               target='_blank'
             >

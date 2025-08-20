@@ -61,13 +61,17 @@ const Page = async ({ params }: { params: Promise<{ blogId: string }> }) => {
             alt={title}
           />
         </div>
-        <div className='h-44 lg:h-80 w-full p-4 bg-secondary_bg_color'></div>
+        <div className='grid place-content-center h-44 lg:h-80 w-full p-4 bg-secondary_bg_color'>
+          gpamaster.in
+        </div>
         <article
           className={`${page.style_content} h-auto w-full lg:col-span-3 flex flex-col gap-2 text-left`}
         >
           <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
         </article>
-        <div className='h-40 lg:h-80 w-full p-4 bg-secondary_bg_color'></div>
+        <div className='grid place-content-center h-40 lg:h-80 w-full p-4 bg-secondary_bg_color'>
+          gpamaster.in
+        </div>
       </main>
     </section>
   )

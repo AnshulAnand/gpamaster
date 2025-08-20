@@ -27,7 +27,7 @@ export default function Home() {
         </p>
         <div className='flex flex-wrap justify-center items-center mt-4 gap-2'>
           <Link
-            href='/notes'
+            href='/resources'
             className='text-white bg-[#FF9119] focus:ring-4 focus:outline-none font-medium text-sm px-5 py-2.5 text-center inline-flex items-center hover:bg-[#FF9119]/80 focus:ring-[#FF9119]/40 rounded-xl hover:-translate-y-1 transition'
           >
             Checkout resources <BsStars className='text-lg ml-2' />
