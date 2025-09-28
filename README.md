@@ -23,7 +23,7 @@ Currently serving **NSUT** and **DU** students with notes, PYQs, resources, and 
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Database**: [MongoDB](https://www.mongodb.com/) with [Mongoose](https://mongoosejs.com/)
 - **Payments**: [Razorpay Node SDK](https://razorpay.com/docs/)
-- **Authentication**: Google OAuth (via NextAuth / custom implementation)
+- **Authentication**: Google OAuth
 - **Deployment**: Google Cloud
 
 ---
